@@ -157,7 +157,7 @@
         </div>
         <div class="price-tag">
             <span class="currency">R$</span>
-            <span class="value">279,99</span>
+            <span class="value" id="price-display">279,99</span>
         </div>
         <div class="domain-info">
             <i data-lucide="info" width="16"></i>
@@ -189,7 +189,7 @@
             <li><i data-lucide="star"></i> Copywriting (Textos)</li>
             <li><i data-lucide="star"></i> SEO Google</li>
         </ul>
-        <a href="https://wa.me/5545984039137?text=Quero%20Orcamento%20Personalizado" class="btn secondary card-btn full-width">Solicitar Avaliação</a>
+        <a href="https://wa.me/5545984039137?text=Quero%20Orcamento%20Personalizado" class="btn secondary card-btn full-width" id="btn-elite">Solicitar Avaliação</a>
     </div>
   </div>
 </section>
@@ -204,7 +204,7 @@
             <p>Possui um cupom válido? Ganhe <strong>10% OFF</strong> instantaneamente.</p>
             
             <div class="coupon-box">
-                <input type="text" placeholder="Digite: PROMO, SITE ou PAGINA" id="couponInput">
+                <input type="text" placeholder="Digite: PROMO" id="couponInput">
                 <button class="btn-apply" onclick="applyCoupon()">Aplicar</button>
             </div>
             <p id="coupon-msg" class="coupon-msg"></p>
@@ -252,22 +252,53 @@
     lucide.createIcons();
   }
 
-  // Coupon Logic
+  // Coupon Logic Avançada
   function applyCoupon() {
       const input = document.getElementById('couponInput');
       const msg = document.getElementById('coupon-msg');
       const code = input.value.toUpperCase().trim();
-      const validCodes = ['PAGINA', 'SITE', 'PROMO']; // Lista de cupons válidos
+      const validCodes = ['PAGINA', 'SITE', 'PROMO']; 
 
       if(validCodes.includes(code)) {
-          const valorOriginal = 279.99;
-          const desconto = valorOriginal * 0.10;
-          const valorFinal = valorOriginal - desconto;
-
+          // 1. Feedback Imediato
           msg.style.color = '#25d366';
-          msg.innerHTML = `✅ Cupom <strong>${code}</strong> aplicado! <br> Você economizou R$ ${desconto.toFixed(2)}. Preço final: <strong>R$ ${valorFinal.toFixed(2)}</strong>.`;
+          msg.innerHTML = `✅ Cupom <strong>${code}</strong> validado! Aplicando desconto...`;
           input.style.borderColor = '#25d366';
-          input.style.backgroundColor = 'rgba(37, 211, 102, 0.1)';
+          
+          // 2. Aguarda 2 segundos e faz a mágica
+          setTimeout(() => {
+              // Cálculos
+              const valorOriginal = 279.99;
+              const desconto = valorOriginal * 0.10;
+              const valorFinal = valorOriginal - desconto;
+
+              // A. Atualiza o Preço Visualmente (Corta o antigo e põe o novo)
+              const priceDisplay = document.getElementById('price-display');
+              priceDisplay.innerHTML = `
+                  <span class="old-price">R$ ${valorOriginal.toString().replace('.',',')}</span> 
+                  ${valorFinal.toFixed(2).replace('.',',')}
+              `;
+              priceDisplay.classList.add('new-price-active');
+
+              // B. Atualiza o Botão do Plano Elite para o WhatsApp com desconto
+              const btnElite = document.getElementById('btn-elite');
+              const numeroZap = "5545984039137";
+              const textoElite = `Olá! Apliquei o cupom ${code} no site e quero solicitar um orçamento Elite com meus 10% de desconto.`;
+              
+              btnElite.href = `https://wa.me/${numeroZap}?text=${encodeURIComponent(textoElite)}`;
+              
+              // Visual no botão
+              btnElite.style.borderColor = "#25d366";
+              btnElite.style.color = "#25d366";
+              btnElite.innerHTML = "Solicitar c/ 10% OFF";
+
+              // C. Rola a tela
+              document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+
+              msg.innerHTML = `🎉 Preços atualizados com sucesso!`;
+
+          }, 2000);
+
       } else {
           msg.style.color = '#ff4444';
           msg.innerHTML = "❌ Cupom inválido. Tente: PROMO";

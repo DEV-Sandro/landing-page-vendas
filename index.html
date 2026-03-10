@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Profissional — Sites Premium</title>
+  <title>Web Profissional — Sites Premium para Alta Conversão</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
   
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KN6052TK8L'); // Coloque seu ID de medição aqui
+  </script>
   
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,87 +28,96 @@
 <header class="hero scroll-reveal">
   <nav class="nav">
     <div class="brand-wrapper">
-      <img src="wp_logoPremiun.png" alt="Logo WP" class="brand-logo">
-      <div class="brand-text">
-        <span class="wp-sigla">WP</span>
-        <span class="wp-nome">Web Profissional</span>
-      </div>
+      <span class="wp-sigla">WP</span>
+      <span class="wp-nome">Web Profissional</span>
     </div>
     
-    <a class="btn-whatsapp-nav" href="https://wa.me/5545984039137" target="_blank">
-      <i data-lucide="message-circle" width="18"></i> <span>WhatsApp</span>
+    <a class="btn-whatsapp-nav track-wpp" href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20sites." target="_blank">
+      <i data-lucide="message-circle" width="18"></i> <span>Falar no WhatsApp</span>
     </a>
   </nav>
 
-  <div class="hero-content">
-    <span class="badge">Presença Digital de Elite</span>
-    <h1>Sites Premium para Profissionais</h1>
-    <p>Design moderno, rápido e focado em conversão para psicólogos, advogados e prestadores de serviço.</p>
-    
-    <div class="hero-actions">
-      <a href="#portfolio" class="btn primary">
-        Ver Modelos <i data-lucide="eye"></i>
-      </a>
-      <a href="https://wa.me/5545984039137" class="btn secondary" target="_blank">
-        Falar com Especialista
-      </a>
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="badge">
+        <span class="pulse-dot"></span> Vagas limitadas para este mês
+      </div>
+      <h1>Sua autoridade exige um site <span class="text-highlight">à altura.</span></h1>
+      <p>Desenvolvemos landing pages estratégicas de alto padrão para advogados, médicos e consultores que desejam transformar visitantes em clientes todos os dias.</p>
+      
+      <div class="hero-actions">
+        <a href="#planos" class="btn primary track-planos">
+          Ver Planos <i data-lucide="arrow-down" width="18"></i>
+        </a>
+        <a href="https://wa.me/554699385946?text=Olá,%20quero%20um%20orçamento." class="btn secondary track-wpp" target="_blank">
+          Falar com Especialista
+        </a>
+      </div>
+
+      <div class="trust-bar mt-4">
+        <p>Especialistas em conversão para:</p>
+        <div class="trust-badges">
+          <span><i data-lucide="scale" width="16"></i> Direito</span>
+          <span><i data-lucide="brain" width="16"></i> Psicologia</span>
+          <span><i data-lucide="stethoscope" width="16"></i> Saúde</span>
+          <span><i data-lucide="briefcase" width="16"></i> Negócios</span>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="theme-customizer scroll-reveal">
   <div class="customizer-content">
-    <h2>🎨 Estúdio de Design</h2>
-    <p>Clique nos estilos abaixo e veja o site se transformar completamente (Cores, Fontes e Formas):</p>
+    <h2>Acessibilidade e Design</h2>
+    <p>Cores otimizadas para leitura (WCAG). O seu site deve refletir a sua autoridade em qualquer dispositivo. Teste nossa arquitetura abaixo.</p>
     
     <div class="palette-grid">
       <button class="palette-btn active" onclick="setTheme('theme-corporate', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #0f1e3d 50%, #007bff 50%); border-radius: 8px;"></div>
+        <div class="preview" style="background: linear-gradient(135deg, #0f172a 50%, #2563eb 50%); border-radius: 8px;"></div>
         <span>Corporativo</span>
       </button>
-
       <button class="palette-btn" onclick="setTheme('theme-elegant', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #2a0a0a 50%, #d4af37 50%); border-radius: 0;"></div>
-        <span>Luxo</span>
+        <div class="preview" style="background: linear-gradient(135deg, #272320 50%, #b48600 50%); border-radius: 0;"></div>
+        <span>Luxo & Direito</span>
       </button>
-
-      <button class="palette-btn" onclick="setTheme('theme-tech', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #000 50%, #00ff9d 50%); border-radius: 4px;"></div>
-        <span>Cyberpunk</span>
-      </button>
-
       <button class="palette-btn" onclick="setTheme('theme-health', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #0f4c5c 50%, #38b6ff 50%); border-radius: 50%;"></div>
+        <div class="preview" style="background: linear-gradient(135deg, #082f49 50%, #0284c7 50%); border-radius: 50%;"></div>
         <span>Saúde</span>
       </button>
-      
+      <button class="palette-btn" onclick="setTheme('theme-tech', this)">
+        <div class="preview" style="background: linear-gradient(135deg, #000000 50%, #00e58d 50%); border-radius: 4px;"></div>
+        <span>Tech</span>
+      </button>
       <button class="palette-btn" onclick="setTheme('theme-creative', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #4a00e0 50%, #8e2de2 50%); border-radius: 12px 0;"></div>
-        <span>Criativo</span>
+        <div class="preview" style="background: linear-gradient(135deg, #3b0764 50%, #7e22ce 50%); border-radius: 16px 0;"></div>
+        <span>Agência Criativa</span>
       </button>
     </div>
   </div>
 </section>
 
 <section class="portfolio scroll-reveal" id="portfolio">
-    <div class="portfolio-header">
-        <h2>Modelos Reais</h2>
-        <p>Sites de alta performance que já criamos.</p>
+    <div class="section-header">
+        <h2>Portfólio Premium</h2>
+        <p>Explore alguns dos projetos de alta performance que já colocamos no ar.</p>
     </div>
 
     <div class="portfolio-grid">
         <div class="portfolio-card">
             <div class="browser-frame">
                 <div class="browser-dots"><span></span><span></span><span></span></div>
-                <div class="preview-area adv-bg-1">
+            </div>
+            <div class="preview-area adv-bg-1">
+                <div class="overlay-glass">
                     <i data-lucide="scale" size="48"></i>
-                    <span>Ver Site</span>
+                    <span>Preview do Layout</span>
                 </div>
             </div>
             <div class="portfolio-info">
-                <h3>Advocacia Moderno</h3>
-                <a href="https://dev-sandro.github.io/modelo-advocacia/" target="_blank" class="btn-live">
-                    Acessar <i data-lucide="external-link" width="16"></i>
+                <h3>Escritório Full-Service</h3>
+                <a href="#" target="_blank" class="btn-live">
+                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
                 </a>
             </div>
         </div>
@@ -108,15 +125,17 @@
         <div class="portfolio-card">
             <div class="browser-frame">
                 <div class="browser-dots"><span></span><span></span><span></span></div>
-                <div class="preview-area psi-bg">
+            </div>
+            <div class="preview-area psi-bg">
+                <div class="overlay-glass">
                     <i data-lucide="heart-handshake" size="48"></i>
-                    <span>Ver Site</span>
+                    <span>Preview do Layout</span>
                 </div>
             </div>
             <div class="portfolio-info">
-                <h3>Psicologia & Saúde</h3>
-                <a href="https://dev-sandro.github.io/modelo-psi/" target="_blank" class="btn-live">
-                    Acessar <i data-lucide="external-link" width="16"></i>
+                <h3>Clínica de Psicologia</h3>
+                <a href="#" target="_blank" class="btn-live">
+                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
                 </a>
             </div>
         </div>
@@ -124,72 +143,70 @@
         <div class="portfolio-card">
             <div class="browser-frame">
                 <div class="browser-dots"><span></span><span></span><span></span></div>
-                <div class="preview-area adv-bg-2">
-                    <i data-lucide="gavel" size="48"></i>
-                    <span>Ver Site</span>
+            </div>
+            <div class="preview-area adv-bg-2">
+                <div class="overlay-glass">
+                    <i data-lucide="building-2" size="48"></i>
+                    <span>Preview do Layout</span>
                 </div>
             </div>
             <div class="portfolio-info">
                 <h3>Advocacia Institucional</h3>
-                <a href="https://dev-sandro.github.io/site-advocacia/" target="_blank" class="btn-live">
-                    Acessar <i data-lucide="external-link" width="16"></i>
+                <a href="#" target="_blank" class="btn-live">
+                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
                 </a>
             </div>
         </div>
     </div>
-    
-    <div class="other-categories scroll-reveal">
-        <div class="cat-text">
-            <h3>Outras Profissões?</h3>
-            <p>Criamos para Médicos, Engenheiros, Lojas e Personal Trainers.</p>
-        </div>
-        <a href="https://wa.me/5545984039137" class="btn secondary small-btn">Ver portfólio completo</a>
-    </div>
 </section>
 
 <section class="plans scroll-reveal" id="planos">
-  <h2>Investimento</h2>
+  <div class="section-header">
+    <h2>Investimento Transparente</h2>
+    <p>Sem surpresas, sem taxas ocultas. Escolha o plano ideal para a sua fase atual.</p>
+  </div>
+  
   <div class="pricing-grid">
     <div class="plan-card standard">
         <div class="plan-header">
-            <h3>Portfólio Padrão</h3>
-            <p>Rápido e profissional.</p>
+            <h3>Presença Essencial</h3>
+            <p>A base sólida para autônomos que precisam de um site profissional e rápido.</p>
         </div>
+        
         <div class="price-tag">
             <span class="currency">R$</span>
-            <span class="value" id="price-display">279,99</span>
+            <span class="old-price" id="old-price-display"></span>
+            <span class="value" id="current-price-display">349,99</span>
         </div>
-        <div class="domain-info">
-            <i data-lucide="info" width="16"></i>
-            <p>+ Domínio (~R$40/ano)</p>
-        </div>
+        
+        <div class="tag-payment"><i data-lucide="credit-card" width="14"></i> Pagamento único — sem mensalidade</div>
         <ul class="features">
-            <li><i data-lucide="check"></i> Site Pronto em 48h</li>
-            <li><i data-lucide="check"></i> Botão WhatsApp</li>
-            <li><i data-lucide="check"></i> Hospedagem Inclusa</li>
+            <li><i data-lucide="check-circle-2"></i> Site no ar em até 48h</li>
+            <li><i data-lucide="check-circle-2"></i> Design Responsivo (Mobile)</li>
+            <li><i data-lucide="check-circle-2"></i> Botão WhatsApp Direto</li>
+            <li><i data-lucide="check-circle-2"></i> Hospedagem Grátis (Github Pages)</li>
+            <li><i data-lucide="info" width="16" style="color:var(--text-light)"></i> <span class="text-sm">Domínio não incluso (~R$40/ano)</span></li>
         </ul>
-        <a href="https://wa.me/5545984039137?text=Quero%20o%20Plano%20Padrao" class="btn primary full-width">Quero este</a>
+        <a href="https://wa.me/554699385946?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial." class="btn secondary card-btn full-width track-wpp">Iniciar Projeto</a>
     </div>
 
     <div class="plan-card elite">
-        <div class="badge-best">Mais Vendido</div>
+        <div class="badge-best">Plano VIP Mais Escolhido</div>
         <div class="plan-header">
-            <h3>Elite Personalizado</h3>
-            <p>Exclusividade total.</p>
+            <h3>Máxima Conversão</h3>
+            <p>O ecossistema completo para quem investe em tráfego pago (Google/Meta Ads).</p>
         </div>
         <div class="price-tag">
-            <span class="value">Sob Medida</span>
+            <span class="value" style="font-size: 2.2rem;">Sob Medida</span>
         </div>
-        <div class="domain-info">
-            <i data-lucide="star" width="16"></i>
-            <p>Orçamento via análise</p>
-        </div>
+        <div class="tag-payment" style="background: rgba(0,0,0,0.05); color: var(--text-main);"><i data-lucide="search" width="14"></i> Orçamento após diagnóstico</div>
         <ul class="features">
-            <li><i data-lucide="star"></i> Design Exclusivo</li>
-            <li><i data-lucide="star"></i> Copywriting (Textos)</li>
-            <li><i data-lucide="star"></i> SEO Google</li>
+            <li><i data-lucide="star"></i> Design 100% Exclusivo</li>
+            <li><i data-lucide="star"></i> Copywriting (Gatilhos de Venda)</li>
+            <li><i data-lucide="star"></i> Integração de Pixel e Analytics</li>
+            <li><i data-lucide="star"></i> SEO Avançado para Google</li>
         </ul>
-        <a href="https://wa.me/5545984039137?text=Quero%20Orcamento%20Personalizado" class="btn secondary card-btn full-width" id="btn-elite">Solicitar Avaliação</a>
+        <a href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito." class="btn primary full-width track-wpp">Agendar Diagnóstico</a>
     </div>
   </div>
 </section>
@@ -200,12 +217,11 @@
             <i data-lucide="ticket-percent" size="48"></i>
         </div>
         <div class="ref-content">
-            <h3>Cupom de Desconto</h3>
-            <p>Possui um cupom válido? Ganhe <strong>10% OFF</strong> instantaneamente.</p>
-            
+            <h3>Possui um convite?</h3>
+            <p>Insira seu código abaixo para calcular seu desconto instantâneo.</p>
             <div class="coupon-box">
-                <input type="text" placeholder="Digite: PROMO" id="couponInput">
-                <button class="btn-apply" onclick="applyCoupon()">Aplicar</button>
+                <input type="text" placeholder="Ex: PROMO10 ou DESCONTO20" id="couponInput">
+                <button class="btn-apply" onclick="applyAndAnimateCoupon()">Validar Cupom</button>
             </div>
             <p id="coupon-msg" class="coupon-msg"></p>
         </div>
@@ -214,96 +230,99 @@
 
 <footer class="footer">
   <div class="footer-content">
-      <p>© 2026 Web Profissional.</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/dev-sandro-sousa/" target="_blank">LinkedIn</a>
-        <a href="https://wa.me/5545984039137" target="_blank">WhatsApp</a>
+      <div class="brand-text" style="display:flex; align-items:center; gap: 8px; justify-content: center; margin-bottom: 1rem;">
+          <span class="wp-sigla" style="color: var(--primary); font-weight: 900;">WP</span>
+          <span class="wp-nome" style="color: var(--text-main); font-weight: 700;">Web Profissional</span>
       </div>
+      <p style="color: var(--text-light); font-size: 0.9rem;">© 2026 Web Profissional. Todos os direitos reservados. Foco extremo em performance.</p>
   </div>
 </footer>
 
 <script>
+  // Inicialização de ícones e Observer
   lucide.createIcons();
 
-  // Scroll Reveal Observer
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('active');
-        }
-    });
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('active'); });
   }, { threshold: 0.1 });
-
   document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
 
-  // Theme Logic
+  // Lógica de Temas
   function setTheme(themeName, element) {
-    document.body.className = ''; 
-    document.body.classList.add(themeName);
+    document.body.className = themeName;
     document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
     element.classList.add('active');
-    
-    // Animação de Flash na troca
-    const overlay = document.createElement('div');
-    overlay.className = 'theme-flash';
-    document.body.appendChild(overlay);
-    setTimeout(() => overlay.remove(), 500);
-
-    lucide.createIcons();
   }
 
-  // Coupon Logic Avançada
-  function applyCoupon() {
+  // Lógica Analytics (GA4)
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.track-wpp').forEach(button => {
+        button.addEventListener('click', () => {
+            if(typeof gtag === 'function') {
+                gtag('event', 'click_whatsapp', {
+                    'event_category': 'Leads',
+                    'event_label': 'Botão WhatsApp'
+                });
+            }
+        });
+    });
+
+    document.querySelectorAll('.track-planos').forEach(button => {
+        button.addEventListener('click', () => {
+            if(typeof gtag === 'function') {
+                gtag('event', 'click_ver_planos', {
+                    'event_category': 'Engajamento',
+                    'event_label': 'Ver Planos'
+                });
+            }
+        });
+    });
+  });
+
+  // Lógica de Cupom com Animação
+  function applyAndAnimateCoupon() {
       const input = document.getElementById('couponInput');
       const msg = document.getElementById('coupon-msg');
+      const oldPriceEl = document.getElementById('old-price-display');
+      const currentPriceEl = document.getElementById('current-price-display');
+      
       const code = input.value.toUpperCase().trim();
-      const validCodes = ['PAGINA', 'SITE', 'PROMO']; 
+      
+      const validCoupons = {
+          'PROMO10': 0.10, 
+          'DESCONTO20': 0.20 
+      };
 
-      if(validCodes.includes(code)) {
-          // 1. Feedback Imediato
-          msg.style.color = '#25d366';
-          msg.innerHTML = `✅ Cupom <strong>${code}</strong> validado! Aplicando desconto...`;
-          input.style.borderColor = '#25d366';
+      msg.className = 'coupon-msg';
+      currentPriceEl.classList.remove('price-highlight');
+
+      if (validCoupons.hasOwnProperty(code)) {
+          const basePrice = 349.99;
+          const discountPercent = validCoupons[code];
+          const newPrice = basePrice - (basePrice * discountPercent);
+
+          oldPriceEl.textContent = basePrice.toFixed(2).replace('.', ',');
+          oldPriceEl.classList.add('show');
           
-          // 2. Aguarda 2 segundos e faz a mágica
           setTimeout(() => {
-              // Cálculos
-              const valorOriginal = 279.99;
-              const desconto = valorOriginal * 0.10;
-              const valorFinal = valorOriginal - desconto;
+              currentPriceEl.textContent = newPrice.toFixed(2).replace('.', ',');
+              currentPriceEl.classList.add('price-highlight');
+          }, 150); 
 
-              // A. Atualiza o Preço Visualmente (Corta o antigo e põe o novo)
-              const priceDisplay = document.getElementById('price-display');
-              priceDisplay.innerHTML = `
-                  <span class="old-price">R$ ${valorOriginal.toString().replace('.',',')}</span> 
-                  ${valorFinal.toFixed(2).replace('.',',')}
-              `;
-              priceDisplay.classList.add('new-price-active');
+          msg.innerHTML = `<i data-lucide="check-circle" style="vertical-align: middle; margin-right: 5px;"></i> Promoção aplicada com sucesso! (${discountPercent * 100}% OFF)`;
+          msg.classList.add('success');
+          lucide.createIcons();
 
-              // B. Atualiza o Botão do Plano Elite para o WhatsApp com desconto
-              const btnElite = document.getElementById('btn-elite');
-              const numeroZap = "5545984039137";
-              const textoElite = `Olá! Apliquei o cupom ${code} no site e quero solicitar um orçamento Elite com meus 10% de desconto.`;
-              
-              btnElite.href = `https://wa.me/${numeroZap}?text=${encodeURIComponent(textoElite)}`;
-              
-              // Visual no botão
-              btnElite.style.borderColor = "#25d366";
-              btnElite.style.color = "#25d366";
-              btnElite.innerHTML = "Solicitar c/ 10% OFF";
-
-              // C. Rola a tela
-              document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
-
-              msg.innerHTML = `🎉 Preços atualizados com sucesso!`;
-
-          }, 2000);
+          setTimeout(() => {
+              document.getElementById('planos').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 800);
 
       } else {
-          msg.style.color = '#ff4444';
-          msg.innerHTML = "❌ Cupom inválido. Tente: PROMO";
-          input.style.borderColor = '#ff4444';
-          input.style.backgroundColor = 'rgba(255, 68, 68, 0.1)';
+          msg.innerHTML = `<i data-lucide="x-circle" style="vertical-align: middle; margin-right: 5px;"></i> Cupom inválido ou expirado. Verifique a digitação.`;
+          msg.classList.add('error');
+          oldPriceEl.classList.remove('show');
+          currentPriceEl.textContent = "349,99"; 
+          lucide.createIcons();
       }
   }
 </script>

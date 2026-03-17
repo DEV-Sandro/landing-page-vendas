@@ -3,328 +3,610 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Profissional — Sites Premium para Alta Conversão</title>
-  
+  <title>Sandro | Engenharia de Conversão e Sites Premium</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KN6052TK8L'); // Coloque seu ID de medição aqui
-  </script>
-  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="theme-corporate">
 
-<div class="animated-bg"></div>
+  <header class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-grid-pattern"></div>
 
-<header class="hero scroll-reveal">
-  <nav class="nav">
-    <div class="brand-wrapper">
-      <span class="wp-sigla">WP</span>
-      <span class="wp-nome">Web Profissional</span>
-    </div>
-    
-    <a class="btn-whatsapp-nav track-wpp" href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20sites." target="_blank">
-      <i data-lucide="message-circle" width="18"></i> <span>Falar no WhatsApp</span>
-    </a>
-  </nav>
-
-  <div class="hero-container">
-    <div class="hero-content">
-      <div class="badge">
-        <span class="pulse-dot"></span> Vagas limitadas para este mês
+    <nav class="nav container">
+      <div class="brand-wrapper">
+        <div class="brand-logo">WP</div>
+        <span class="wp-nome">Web Profissional</span>
       </div>
-      <h1>Sua autoridade exige um site <span class="text-highlight">à altura.</span></h1>
-      <p>Desenvolvemos landing pages estratégicas de alto padrão para advogados, médicos e consultores que desejam transformar visitantes em clientes todos os dias.</p>
       
-      <div class="hero-actions">
-        <a href="#planos" class="btn primary track-planos">
-          Ver Planos <i data-lucide="arrow-down" width="18"></i>
-        </a>
-        <a href="https://wa.me/554699385946?text=Olá,%20quero%20um%20orçamento." class="btn secondary track-wpp" target="_blank">
-          Falar com Especialista
-        </a>
-      </div>
+      <a class="btn btn-secondary btn-sm track-wpp" href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20criação%20de%20sites%20premium." target="_blank">
+        <i data-lucide="message-circle" width="16"></i> Falar no WhatsApp
+      </a>
+    </nav>
 
-      <div class="trust-bar mt-4">
-        <p>Especialistas em conversão para:</p>
-        <div class="trust-badges">
-          <span><i data-lucide="scale" width="16"></i> Direito</span>
-          <span><i data-lucide="brain" width="16"></i> Psicologia</span>
-          <span><i data-lucide="stethoscope" width="16"></i> Saúde</span>
-          <span><i data-lucide="briefcase" width="16"></i> Negócios</span>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="pulse"></span> Vagas limitadas para este mês
+        </div>
+        <h1 class="fade-up delay-1">O seu site atual está destruindo a sua <span class="highlight">autoridade.</span></h1>
+        <p class="fade-up delay-2">Você é um especialista de alto nível, mas seu posicionamento digital diz o contrário. Transformamos profissionais em referências absolutas com plataformas ultrarrápidas, design premium e engenharia focada em multiplicar seus agendamentos.</p>
+        
+        <div class="hero-actions fade-up delay-3">
+          <a href="#planos" class="btn btn-primary track-planos">
+            Ver Investimento <i data-lucide="arrow-right" width="18"></i>
+          </a>
+          <a href="https://wa.me/554699385946?text=Olá,%20quero%20agendar%20um%20diagnóstico%20gratuito%20do%20meu%20posicionamento." class="btn btn-glass track-wpp" target="_blank">
+            Agendar Diagnóstico
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</header>
 
-<section class="theme-customizer scroll-reveal">
-  <div class="customizer-content">
-    <h2>Acessibilidade e Design</h2>
-    <p>Cores otimizadas para leitura (WCAG). O seu site deve refletir a sua autoridade em qualquer dispositivo. Teste nossa arquitetura abaixo.</p>
-    
-    <div class="palette-grid">
-      <button class="palette-btn active" onclick="setTheme('theme-corporate', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #0f172a 50%, #2563eb 50%); border-radius: 8px;"></div>
-        <span>Corporativo</span>
-      </button>
-      <button class="palette-btn" onclick="setTheme('theme-elegant', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #272320 50%, #b48600 50%); border-radius: 0;"></div>
-        <span>Luxo & Direito</span>
-      </button>
-      <button class="palette-btn" onclick="setTheme('theme-health', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #082f49 50%, #0284c7 50%); border-radius: 50%;"></div>
-        <span>Saúde</span>
-      </button>
-      <button class="palette-btn" onclick="setTheme('theme-tech', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #000000 50%, #00e58d 50%); border-radius: 4px;"></div>
-        <span>Tech</span>
-      </button>
-      <button class="palette-btn" onclick="setTheme('theme-creative', this)">
-        <div class="preview" style="background: linear-gradient(135deg, #3b0764 50%, #7e22ce 50%); border-radius: 16px 0;"></div>
-        <span>Agência Criativa</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<section class="portfolio scroll-reveal" id="portfolio">
-    <div class="section-header">
-        <h2>Portfólio Premium</h2>
-        <p>Explore alguns dos projetos de alta performance que já colocamos no ar.</p>
-    </div>
-
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <div class="browser-frame">
-                <div class="browser-dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="preview-area adv-bg-1">
-                <div class="overlay-glass">
-                    <i data-lucide="scale" size="48"></i>
-                    <span>Preview do Layout</span>
-                </div>
-            </div>
-            <div class="portfolio-info">
-                <h3>Escritório Full-Service</h3>
-                <a href="#" target="_blank" class="btn-live">
-                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
-                </a>
-            </div>
+    <div class="hero-mockup-wrapper fade-up delay-4">
+      <div class="hero-mockup">
+        <div class="hero-mockup-header">
+          <div class="mac-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">webprofissional.com/premium</div>
         </div>
-
-        <div class="portfolio-card">
-            <div class="browser-frame">
-                <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="hero-mockup-body">
+          <div class="mockup-skeleton">
+            <div class="sk-header"></div>
+            <div class="sk-hero"></div>
+            <div class="sk-grid">
+              <div class="sk-card"></div>
+              <div class="sk-card"></div>
+              <div class="sk-card"></div>
             </div>
-            <div class="preview-area psi-bg">
-                <div class="overlay-glass">
-                    <i data-lucide="heart-handshake" size="48"></i>
-                    <span>Preview do Layout</span>
-                </div>
-            </div>
-            <div class="portfolio-info">
-                <h3>Clínica de Psicologia</h3>
-                <a href="#" target="_blank" class="btn-live">
-                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
-                </a>
-            </div>
+          </div>
         </div>
-
-        <div class="portfolio-card">
-            <div class="browser-frame">
-                <div class="browser-dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="preview-area adv-bg-2">
-                <div class="overlay-glass">
-                    <i data-lucide="building-2" size="48"></i>
-                    <span>Preview do Layout</span>
-                </div>
-            </div>
-            <div class="portfolio-info">
-                <h3>Advocacia Institucional</h3>
-                <a href="#" target="_blank" class="btn-live">
-                    Acessar Projeto Real <i data-lucide="external-link" width="16"></i>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
+  </header>
 
-<section class="plans scroll-reveal" id="planos">
-  <div class="section-header">
-    <h2>Investimento Transparente</h2>
-    <p>Sem surpresas, sem taxas ocultas. Escolha o plano ideal para a sua fase atual.</p>
-  </div>
-  
-  <div class="pricing-grid">
-    <div class="plan-card standard">
-        <div class="plan-header">
+  <section class="stats-section scroll-reveal">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <h3>+40</h3>
+        <p>Projetos Entregues</p>
+      </div>
+      <div class="stat-item">
+        <h3>98%</h3>
+        <p>Clientes Satisfeitos</p>
+      </div>
+      <div class="stat-item">
+        <h3>48h</h3>
+        <p>Tempo de Lançamento</p>
+      </div>
+      <div class="stat-item">
+        <h3>3x</h3>
+        <p>Mais Conversão Média</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-cloud scroll-reveal">
+    <div class="container">
+      <p>Desenvolvemos infraestrutura de vendas para especialistas em:</p>
+      <div class="logos">
+        <span class="logo-item"><i data-lucide="scale" width="20"></i> Direito & Advocacia</span>
+        <span class="logo-item"><i data-lucide="brain" width="20"></i> Saúde Mental</span>
+        <span class="logo-item"><i data-lucide="stethoscope" width="20"></i> Clínicas Médicas</span>
+        <span class="logo-item"><i data-lucide="briefcase" width="20"></i> Consultorias</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding process scroll-reveal" id="processo">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Nosso Método</span>
+        <h2>A anatomia de uma presença inquestionável</h2>
+        <p>Nós cuidamos de absolutamente tudo, do zero ao lançamento, para que você foque apenas em atender seus novos clientes.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step">01</div>
+          <div class="process-icon"><i data-lucide="microscope"></i></div>
+          <h3>Diagnóstico Estratégico</h3>
+          <p>Mapeamos seu público-alvo, seus concorrentes e o seu diferencial único de mercado para definir a estratégia exata.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step">02</div>
+          <div class="process-icon"><i data-lucide="pen-tool"></i></div>
+          <h3>Copywriting Persuasivo</h3>
+          <p>Escrevemos textos que tocam na dor profunda do seu cliente e elevam o seu serviço à categoria de "única solução lógica".</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step">03</div>
+          <div class="process-icon"><i data-lucide="code-2"></i></div>
+          <h3>Design & UX Premium</h3>
+          <p>Criamos interfaces sofisticadas e sob medida que justificam o alto valor dos seus honorários ou consultas.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step">04</div>
+          <div class="process-icon"><i data-lucide="shield-check"></i></div>
+          <h3>Lançamento & Blindagem</h3>
+          <p>Código limpo, SEO avançado e manutenção mensal VIP. Seu site seguro, atualizado e convertendo 24h por dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding portfolio scroll-reveal" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Portfólio Premium</span>
+        <h2>Projetos de Alta Performance</h2>
+        <p>Explore as interfaces que desenvolvemos para líderes em seus mercados.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <a href="https://oenningadvocacia.adv.br/" target="_blank" class="portfolio-card">
+          <div class="browser-frame">
+            <div class="mac-dots"><span></span><span></span><span></span></div>
+            <i data-lucide="external-link" width="16" class="ext-icon"></i>
+          </div>
+          <div class="preview-area adv-bg-1">
+            <div class="preview-mockup">
+              <div class="pm-header"></div>
+              <div class="pm-hero"></div>
+              <div class="pm-split">
+                <div class="pm-box"></div>
+                <div class="pm-box"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="niche">Advocacia Full-Service</span>
+            <h3>Oenning Advocacia</h3>
+            <div class="portfolio-metrics">
+              <div class="metric">
+                <span class="metric-val">+42%</span>
+                <span class="metric-label">Captura Leads</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">0.8s</span>
+                <span class="metric-label">Load Time</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://dev-sandro.github.io/modelo-Gabriela/" target="_blank" class="portfolio-card">
+          <div class="browser-frame">
+            <div class="mac-dots"><span></span><span></span><span></span></div>
+            <i data-lucide="external-link" width="16" class="ext-icon"></i>
+          </div>
+          <div class="preview-area psi-bg">
+            <div class="preview-mockup">
+              <div class="pm-header"></div>
+              <div class="pm-hero-large"></div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="niche">Clínica de Psicologia</span>
+            <h3>Modelo Gabriela</h3>
+            <div class="portfolio-metrics">
+              <div class="metric">
+                <span class="metric-val">3x</span>
+                <span class="metric-label">Agendamentos</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">100/100</span>
+                <span class="metric-label">Acessibilidade</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="https://dev-sandro.github.io/modelo-psi/" target="_blank" class="portfolio-card">
+          <div class="browser-frame">
+            <div class="mac-dots"><span></span><span></span><span></span></div>
+            <i data-lucide="external-link" width="16" class="ext-icon"></i>
+          </div>
+          <div class="preview-area psi-bg-alt">
+            <div class="preview-mockup">
+              <div class="pm-nav"></div>
+              <div class="pm-content-block"></div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="niche">Saúde Mental / Terapias</span>
+            <h3>Modelo Psicologia</h3>
+            <div class="portfolio-metrics">
+              <div class="metric">
+                <span class="metric-val">+55%</span>
+                <span class="metric-label">Conversão Mobile</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">1.1s</span>
+                <span class="metric-label">Load Time</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="https://dev-sandro.github.io/modelo-advocacia/" target="_blank" class="portfolio-card">
+          <div class="browser-frame">
+            <div class="mac-dots"><span></span><span></span><span></span></div>
+            <i data-lucide="external-link" width="16" class="ext-icon"></i>
+          </div>
+          <div class="preview-area adv-bg-2">
+            <div class="preview-mockup">
+              <div class="pm-hero-dark"></div>
+              <div class="pm-text-block"></div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="niche">Advocacia Institucional</span>
+            <h3>Modelo Advocacia</h3>
+            <div class="portfolio-metrics">
+              <div class="metric">
+                <span class="metric-val">SEO</span>
+                <span class="metric-label">Top Google</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">1.2s</span>
+                <span class="metric-label">Load Time</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding theme-customizer scroll-reveal">
+    <div class="container section-header" style="margin-bottom: 3rem;">
+      <span class="tag">Design System</span>
+      <h2>Arquitetura Baseada em Dados</h2>
+      <p>Testamos contrastes e acessibilidade para garantir que seu site transmita confiança. Experimente a troca de contexto em tempo real.</p>
+
+      <div class="palette-grid">
+        <button class="palette-btn active" onclick="setTheme('theme-corporate', this)">
+          <div class="preview preview-corp"></div>
+          <span>Corporativo</span>
+        </button>
+        <button class="palette-btn" onclick="setTheme('theme-elegant', this)">
+          <div class="preview preview-eleg"></div>
+          <span>Luxo & Direito</span>
+        </button>
+        <button class="palette-btn" onclick="setTheme('theme-health', this)">
+          <div class="preview preview-heal"></div>
+          <span>Saúde</span>
+        </button>
+        <button class="palette-btn" onclick="setTheme('theme-tech', this)">
+          <div class="preview preview-tech"></div>
+          <span>Tech / SaaS</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding about-section scroll-reveal" id="sobre">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <div class="about-image">
+          <div class="glow-orb"></div>
+          <i data-lucide="layers" size="80" class="about-icon"></i>
+        </div>
+        <div class="experience-badge">
+          <span class="exp-num">MBA</span>
+          <span class="exp-text">Data Science<br>USP</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="tag">O Especialista</span>
+        <h2>Não somos "criadores de sites". Somos engenheiros de conversão.</h2>
+        <p class="lead-text">Olá, sou o <strong>Sandro</strong>. Entendo uma regra básica do mercado de alto valor: se você cobra caro pelo seu serviço, o seu posicionamento digital precisa justificar esse preço.</p>
+        <p>Profissionais de elite não precisam de um "panfleto digital bonitinho". Vocês precisam de um ecossistema digital implacável. Uma ferramenta de negócios que argumente por você 24 horas por dia, transmita confiança imediata e converta visitantes frios em clientes high-ticket.</p>
+
+        <div class="expertise-list">
+          <div class="expertise-item">
+            <div class="exp-icon"><i data-lucide="layout-template"></i></div>
+            <span>Especialista em UI/UX e Psicologia de Vendas</span>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i data-lucide="zap"></i></div>
+            <span>Arquitetura Front-end Avançada (Performance extrema)</span>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i data-lucide="shield"></i></div>
+            <span>Assessoria Mensal: Hospedagem VIP e Suporte Concierge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding testimonials scroll-reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Social Proof</span>
+        <h2>Resultados que falam por si</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
+          </div>
+          <p class="quote">"Desde que lançamos o novo site do escritório, o perfil dos clientes mudou drasticamente. Paramos de receber curiosos pedindo desconto e começamos a fechar contratos de alto valor. O design transmite exatamente a seriedade e o peso do nosso trabalho."</p>
+          <div class="client-info">
+            <div class="client-avatar">M</div>
+            <div class="client-details">
+              <h4>Dr. Marcos Oenning</h4>
+              <span>Sócio de Advocacia Full-Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
+          </div>
+          <p class="quote">"Eu dependia 100% do Instagram e vivia escrava de criar conteúdo. O site me deu previsibilidade. Hoje, pacientes chegam pelo Google já decididos a agendar a consulta. O investimento se pagou na primeira semana."</p>
+          <div class="client-info">
+            <div class="client-avatar">G</div>
+            <div class="client-details">
+              <h4>Dra. Gabriela</h4>
+              <span>Psicóloga Clínica</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
+          </div>
+          <p class="quote">"Design nível agência multinacional, mas com um atendimento ágil e direto. Recomendo para qualquer pessoa que vende serviço high-ticket e precisa parar de parecer amador na internet."</p>
+          <div class="client-info">
+            <div class="client-avatar">R</div>
+            <div class="client-details">
+              <h4>Ricardo Alves</h4>
+              <span>Consultor Financeiro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding plans scroll-reveal" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Planos & Preços</span>
+        <h2>Investimento transparente. Sem taxas ocultas.</h2>
+        <p>Escolha a infraestrutura ideal para o momento do seu negócio.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="plan-card">
+          <div class="plan-header">
             <h3>Presença Essencial</h3>
-            <p>A base sólida para autônomos que precisam de um site profissional e rápido.</p>
-        </div>
-        
-        <div class="price-tag">
+            <p>A fundação perfeita para autônomos e profissionais liberais que precisam de um site ágil e profissional.</p>
+          </div>
+          
+          <div class="price-tag">
             <span class="currency">R$</span>
-            <span class="old-price" id="old-price-display"></span>
-            <span class="value" id="current-price-display">349,99</span>
+            <div class="price-wrapper">
+              <span class="old-price" id="old-price-display"></span>
+              <span class="value" id="current-price-display">349</span>
+            </div>
+          </div>
+          
+          <div class="tag-payment"><i data-lucide="credit-card" width="16"></i> Pagamento único — s/ mensalidade</div>
+          
+          <ul class="features">
+            <li><i data-lucide="check-circle-2"></i> <span>Landing Page de Alta Conversão</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Design Premium e Responsivo</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Copywriting Estratégico (Gatilhos)</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Botão flutuante do WhatsApp</span></li>
+            <li class="disabled"><i data-lucide="minus"></i> <span>Integração de Pixel (Meta/Google)</span></li>
+            <li class="disabled"><i data-lucide="minus"></i> <span>SEO Avançado e Automação CRM</span></li>
+          </ul>
+          
+          <a href="https://wa.me/554699385946?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial." class="btn btn-outline full-width track-wpp" target="_blank">Iniciar Projeto</a>
         </div>
-        
-        <div class="tag-payment"><i data-lucide="credit-card" width="14"></i> Pagamento único — sem mensalidade</div>
-        <ul class="features">
-            <li><i data-lucide="check-circle-2"></i> Site no ar em até 48h</li>
-            <li><i data-lucide="check-circle-2"></i> Design Responsivo (Mobile)</li>
-            <li><i data-lucide="check-circle-2"></i> Botão WhatsApp Direto</li>
-            <li><i data-lucide="check-circle-2"></i> Hospedagem Grátis (Github Pages)</li>
-            <li><i data-lucide="info" width="16" style="color:var(--text-light)"></i> <span class="text-sm">Domínio não incluso (~R$40/ano)</span></li>
-        </ul>
-        <a href="https://wa.me/554699385946?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial." class="btn secondary card-btn full-width track-wpp">Iniciar Projeto</a>
-    </div>
 
-    <div class="plan-card elite">
-        <div class="badge-best">Plano VIP Mais Escolhido</div>
-        <div class="plan-header">
-            <h3>Máxima Conversão</h3>
-            <p>O ecossistema completo para quem investe em tráfego pago (Google/Meta Ads).</p>
+        <div class="plan-card elite">
+          <div class="elite-glow"></div>
+          <div class="badge-best">Recomendado para Tráfego Pago</div>
+          <div class="plan-header">
+            <h3>Agência Completa</h3>
+            <p>A solução end-to-end para clínicas, escritórios e empresas que querem dominar o mercado.</p>
+          </div>
+          
+          <div class="price-tag custom-price">
+            <span class="value">Sob Medida</span>
+          </div>
+          
+          <div class="tag-payment highlight-tag"><i data-lucide="search" width="16"></i> Orçamento após diagnóstico</div>
+          
+          <ul class="features">
+            <li class="feature-title"><i data-lucide="layers"></i> <strong>Tudo do Essencial, mais:</strong></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Site Institucional Completo (Múltiplas Páginas)</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Design 100% Exclusivo Figma</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Copywriting Avançado (Dor/Desejo)</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Integração de Pixel (Meta/Google/TikTok)</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Automação de Leads direta para o CRM</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>SEO Avançado para Buscas Orgânicas</span></li>
+          </ul>
+          
+          <a href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito%20para%20o%20Plano%20Completo." class="btn btn-primary full-width track-wpp" target="_blank">Agendar Diagnóstico Estratégico</a>
         </div>
-        <div class="price-tag">
-            <span class="value" style="font-size: 2.2rem;">Sob Medida</span>
-        </div>
-        <div class="tag-payment" style="background: rgba(0,0,0,0.05); color: var(--text-main);"><i data-lucide="search" width="14"></i> Orçamento após diagnóstico</div>
-        <ul class="features">
-            <li><i data-lucide="star"></i> Design 100% Exclusivo</li>
-            <li><i data-lucide="star"></i> Copywriting (Gatilhos de Venda)</li>
-            <li><i data-lucide="star"></i> Integração de Pixel e Analytics</li>
-            <li><i data-lucide="star"></i> SEO Avançado para Google</li>
-        </ul>
-        <a href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito." class="btn primary full-width track-wpp">Agendar Diagnóstico</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="referral-section scroll-reveal">
-    <div class="referral-container">
+  <section class="guarantee scroll-reveal">
+    <div class="container guarantee-box">
+      <div class="guarantee-icon"><i data-lucide="shield-check" size="48"></i></div>
+      <h2>Garantia de Risco Zero e Satisfação Absoluta</h2>
+      <p>Nós não entregamos projetos "mais ou menos". O seu site só vai para o ar quando você aprovar 100% da interface, do texto e da funcionalidade. Se o projeto não refletir a excelência do seu trabalho no mundo físico, nós refazemos até ficar perfeito. O seu sucesso é o nosso portfólio.</p>
+    </div>
+  </section>
+
+  <section class="section-padding referral-section scroll-reveal">
+    <div class="container">
+      <div class="referral-container">
+        <div class="ref-bg-glow"></div>
         <div class="ref-icon">
-            <i data-lucide="ticket-percent" size="48"></i>
+          <i data-lucide="ticket-percent" size="40"></i>
         </div>
         <div class="ref-content">
-            <h3>Possui um convite?</h3>
-            <p>Insira seu código abaixo para calcular seu desconto instantâneo.</p>
-            <div class="coupon-box">
-                <input type="text" placeholder="Ex: PROMO10 ou DESCONTO20" id="couponInput">
-                <button class="btn-apply" onclick="applyAndAnimateCoupon()">Validar Cupom</button>
-            </div>
-            <p id="coupon-msg" class="coupon-msg"></p>
+          <h3>Você possui um convite VIP?</h3>
+          <p>Insira seu código de indicação ou parceria para recalcular sua proposta automaticamente.</p>
+          <div class="coupon-box">
+            <input type="text" placeholder="Ex: PROMO10" id="couponInput" autocomplete="off">
+            <button class="btn-apply" onclick="applyAndAnimateCoupon()">Validar Benefício</button>
+          </div>
+          <p id="coupon-msg" class="coupon-msg"></p>
         </div>
-    </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-      <div class="brand-text" style="display:flex; align-items:center; gap: 8px; justify-content: center; margin-bottom: 1rem;">
-          <span class="wp-sigla" style="color: var(--primary); font-weight: 900;">WP</span>
-          <span class="wp-nome" style="color: var(--text-main); font-weight: 700;">Web Profissional</span>
       </div>
-      <p style="color: var(--text-light); font-size: 0.9rem;">© 2026 Web Profissional. Todos os direitos reservados. Foco extremo em performance.</p>
-  </div>
-</footer>
+    </div>
+  </section>
 
-<script>
-  // Inicialização de ícones e Observer
-  lucide.createIcons();
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-wrapper" style="margin-bottom: 1.5rem;">
+            <div class="brand-logo small">WP</div>
+            <span class="wp-nome">Web Profissional</span>
+          </div>
+          <p>Elevando o padrão de conversão na internet. Desenvolvemos infraestrutura de vendas para especialistas de alto valor.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#processo">Como Funciona</a></li>
+            <li><a href="#portfolio">Projetos de Sucesso</a></li>
+            <li><a href="#sobre">Quem Sou</a></li>
+            <li><a href="#planos">Investimento</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contato Direto</h4>
+          <ul>
+            <li><a href="https://wa.me/554699385946" target="_blank" class="track-wpp"><i data-lucide="smartphone" width="16"></i> WhatsApp Comercial</a></li>
+            <li><a href="#"><i data-lucide="video" width="16"></i> Agendar Reunião Zoom</a></li>
+            <li><a href="#"><i data-lucide="mail" width="16"></i> contato@webprofissional.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Web Profissional. Todos os direitos reservados.</p>
+        <p class="footer-made-with">Desenvolvido com foco extremo em performance <i data-lucide="zap" width="14"></i></p>
+      </div>
+    </div>
+  </footer>
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('active'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+  <script>
+    // Inicialização de ícones Lucide
+    lucide.createIcons();
 
-  // Lógica de Temas
-  function setTheme(themeName, element) {
-    document.body.className = themeName;
-    document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
-    element.classList.add('active');
-  }
+    // Observer para revelar elementos no scroll (Fade Up)
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
 
-  // Lógica Analytics (GA4)
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.track-wpp').forEach(button => {
-        button.addEventListener('click', () => {
-            if(typeof gtag === 'function') {
-                gtag('event', 'click_whatsapp', {
-                    'event_category': 'Leads',
-                    'event_label': 'Botão WhatsApp'
-                });
-            }
-        });
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => { 
+        if(entry.isIntersecting) {
+          entry.target.classList.add('active'); 
+          observer.unobserve(entry.target); // Anima apenas uma vez
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+
+    // Ativar elementos da hero ao carregar
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.fade-up').forEach(el => el.classList.add('active'));
     });
 
-    document.querySelectorAll('.track-planos').forEach(button => {
-        button.addEventListener('click', () => {
-            if(typeof gtag === 'function') {
-                gtag('event', 'click_ver_planos', {
-                    'event_category': 'Engajamento',
-                    'event_label': 'Ver Planos'
-                });
-            }
-        });
-    });
-  });
+    // Lógica de Temas
+    function setTheme(themeName, element) {
+      document.body.className = themeName;
+      document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+    }
 
-  // Lógica de Cupom com Animação
-  function applyAndAnimateCoupon() {
+    // Lógica Analytics (Eventos Simulados)
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.track-wpp').forEach(button => {
+        button.addEventListener('click', () => {
+          console.log('Evento disparado: click_whatsapp');
+        });
+      });
+
+      document.querySelectorAll('.track-planos').forEach(button => {
+        button.addEventListener('click', () => {
+          console.log('Evento disparado: click_ver_planos');
+        });
+      });
+    });
+
+    // Lógica de Cupom com Animação
+    function applyAndAnimateCoupon() {
       const input = document.getElementById('couponInput');
       const msg = document.getElementById('coupon-msg');
       const oldPriceEl = document.getElementById('old-price-display');
       const currentPriceEl = document.getElementById('current-price-display');
-      
+        
       const code = input.value.toUpperCase().trim();
-      
+        
       const validCoupons = {
-          'PROMO10': 0.10, 
-          'DESCONTO20': 0.20 
+        'PROMO10': 0.10, 
+        'DESCONTO20': 0.20 
       };
 
       msg.className = 'coupon-msg';
       currentPriceEl.classList.remove('price-highlight');
 
       if (validCoupons.hasOwnProperty(code)) {
-          const basePrice = 349.99;
-          const discountPercent = validCoupons[code];
-          const newPrice = basePrice - (basePrice * discountPercent);
+        const basePrice = 349.00;
+        const discountPercent = validCoupons[code];
+        const newPrice = basePrice - (basePrice * discountPercent);
 
-          oldPriceEl.textContent = basePrice.toFixed(2).replace('.', ',');
-          oldPriceEl.classList.add('show');
-          
-          setTimeout(() => {
-              currentPriceEl.textContent = newPrice.toFixed(2).replace('.', ',');
-              currentPriceEl.classList.add('price-highlight');
-          }, 150); 
+        oldPriceEl.textContent = "R$ " + basePrice.toFixed(0);
+        oldPriceEl.classList.add('show');
+            
+        setTimeout(() => {
+          currentPriceEl.textContent = newPrice.toFixed(0);
+          currentPriceEl.classList.add('price-highlight');
+        }, 150); 
 
-          msg.innerHTML = `<i data-lucide="check-circle" style="vertical-align: middle; margin-right: 5px;"></i> Promoção aplicada com sucesso! (${discountPercent * 100}% OFF)`;
-          msg.classList.add('success');
-          lucide.createIcons();
+        msg.innerHTML = `<i data-lucide="check-circle-2" width="16"></i> Benefício aplicado! Desconto de ${discountPercent * 100}% ativado.`;
+        msg.classList.add('success');
+        lucide.createIcons();
 
-          setTimeout(() => {
-              document.getElementById('planos').scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 800);
+        setTimeout(() => {
+          document.getElementById('planos').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 800);
 
       } else {
-          msg.innerHTML = `<i data-lucide="x-circle" style="vertical-align: middle; margin-right: 5px;"></i> Cupom inválido ou expirado. Verifique a digitação.`;
-          msg.classList.add('error');
-          oldPriceEl.classList.remove('show');
-          currentPriceEl.textContent = "349,99"; 
-          lucide.createIcons();
+        msg.innerHTML = `<i data-lucide="x-circle" width="16"></i> Código inválido ou expirado. Verifique e tente novamente.`;
+        msg.classList.add('error');
+        oldPriceEl.classList.remove('show');
+        currentPriceEl.textContent = "349"; 
+        lucide.createIcons();
       }
-  }
-</script>
+    }
+  </script>
+
 </body>
 </html>

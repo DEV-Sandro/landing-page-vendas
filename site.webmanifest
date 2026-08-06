@@ -1,0 +1,16 @@
+{
+  "name": "Sandro Web",
+  "short_name": "Sandro Web",
+  "description": "Sites profissionais para negócios que querem crescer.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c2340",
+  "icons": [
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

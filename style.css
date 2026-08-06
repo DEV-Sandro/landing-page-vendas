@@ -1270,6 +1270,22 @@ h3 {
   color: #fff;
 }
 
+.footer-link-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #9fb0c5;
+  cursor: pointer;
+  font-size: 0.82rem;
+  text-align: left;
+  transition: color 160ms ease;
+}
+
+.footer-link-button:hover {
+  color: #fff;
+}
+
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1283,6 +1299,85 @@ h3 {
   margin: 0;
   color: #768ba3;
   font-size: 0.74rem;
+}
+
+.privacy-main {
+  min-height: 70vh;
+  padding: calc(var(--header-height) + 72px) 0 96px;
+  background: var(--surface-soft);
+}
+
+.privacy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(48px, 8vw, 110px);
+  align-items: start;
+}
+
+.privacy-intro {
+  position: sticky;
+  top: calc(var(--header-height) + 36px);
+}
+
+.privacy-intro h1 {
+  margin: 0 0 20px;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+}
+
+.privacy-intro > p:not(.section-kicker) {
+  color: var(--muted);
+}
+
+.privacy-updated {
+  font-size: 0.84rem;
+}
+
+.privacy-content {
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.privacy-content section + section {
+  margin-top: 38px;
+  padding-top: 38px;
+  border-top: 1px solid var(--line);
+}
+
+.privacy-content h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.privacy-content p {
+  margin-bottom: 14px;
+  color: var(--muted);
+}
+
+.privacy-content a:not(.button) {
+  color: var(--blue-700);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-content .button {
+  margin-top: 4px;
+}
+
+.privacy-footer {
+  padding-top: 28px;
+}
+
+.privacy-footer .footer-bottom a {
+  color: #9fb0c5;
+  font-size: 0.8rem;
+}
+
+.privacy-footer .footer-bottom a:hover {
+  color: #fff;
 }
 
 .whatsapp-float {
@@ -1358,6 +1453,14 @@ h3 {
 }
 
 @media (max-width: 920px) {
+  .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-intro {
+    position: static;
+  }
+
   :root {
     --header-height: 70px;
   }

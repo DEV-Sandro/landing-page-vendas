@@ -1,612 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandro | Engenharia de Conversão e Sites Premium</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandro Web | Sites profissionais para negócios</title>
+  <meta name="description" content="Landing pages e sites institucionais rápidos, responsivos e personalizados para empresas, profissionais liberais e negócios locais.">
+  <meta name="author" content="Sandro Sousa dos Anjos">
+  <meta name="theme-color" content="#0c2340">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dev-sandro.github.io/landing-page-vendas/">
 
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Sandro Web">
+  <meta property="og:title" content="Sandro Web | Sites profissionais para negócios">
+  <meta property="og:description" content="Sites profissionais para negócios que querem crescer.">
+  <meta property="og:url" content="https://dev-sandro.github.io/landing-page-vendas/">
+  <meta property="og:image" content="https://dev-sandro.github.io/landing-page-vendas/assets/images/og-sandro-web.png">
+  <meta property="og:image:alt" content="Sandro Web — sites profissionais para negócios que querem crescer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sandro Web | Sites profissionais para negócios">
+  <meta name="twitter:description" content="Landing pages e sites institucionais rápidos, responsivos e personalizados.">
+  <meta name="twitter:image" content="https://dev-sandro.github.io/landing-page-vendas/assets/images/og-sandro-web.png">
+
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://dev-sandro.github.io/landing-page-vendas/#service",
+    "name": "Sandro Web",
+    "description": "Criação de landing pages e sites institucionais rápidos, responsivos e personalizados.",
+    "url": "https://dev-sandro.github.io/landing-page-vendas/",
+    "telephone": "+55 46 9938-5946",
+    "founder": {
+      "@type": "Person",
+      "name": "Sandro Sousa dos Anjos",
+      "sameAs": [
+        "https://www.linkedin.com/in/dev-sandro-sousa/",
+        "https://github.com/DEV-Sandro"
+      ]
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    },
+    "serviceType": [
+      "Criação de landing pages",
+      "Criação de sites institucionais",
+      "Design responsivo"
+    ],
+    "offers": [
+      {"@type": "Offer", "name": "Landing Essencial", "priceCurrency": "BRL", "price": "697"},
+      {"@type": "Offer", "name": "Landing Profissional", "priceCurrency": "BRL", "price": "1290"},
+      {"@type": "Offer", "name": "Site Institucional", "priceCurrency": "BRL", "price": "1990"}
+    ]
+  }
+  </script>
 </head>
-<body class="theme-corporate">
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="hero-grid-pattern"></div>
-
-    <nav class="nav container">
-      <div class="brand-wrapper">
-        <div class="brand-logo">WP</div>
-        <span class="wp-nome">Web Profissional</span>
-      </div>
-      
-      <a class="btn btn-secondary btn-sm track-wpp" href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20criação%20de%20sites%20premium." target="_blank">
-        <i data-lucide="message-circle" width="16"></i> Falar no WhatsApp
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Sandro Web, início">
+        <span class="brand-name">Sandro <strong>Web</strong></span>
+        <span class="brand-dot" aria-hidden="true"></span>
       </a>
-    </nav>
 
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge fade-up">
-          <span class="pulse"></span> Vagas limitadas para este mês
-        </div>
-        <h1 class="fade-up delay-1">O seu site atual está destruindo a sua <span class="highlight">autoridade.</span></h1>
-        <p class="fade-up delay-2">Você é um especialista de alto nível, mas seu posicionamento digital diz o contrário. Transformamos profissionais em referências absolutas com plataformas ultrarrápidas, design premium e engenharia focada em multiplicar seus agendamentos.</p>
-        
-        <div class="hero-actions fade-up delay-3">
-          <a href="#planos" class="btn btn-primary track-planos">
-            Ver Investimento <i data-lucide="arrow-right" width="18"></i>
-          </a>
-          <a href="https://wa.me/554699385946?text=Olá,%20quero%20agendar%20um%20diagnóstico%20gratuito%20do%20meu%20posicionamento." class="btn btn-glass track-wpp" target="_blank">
-            Agendar Diagnóstico
-          </a>
-        </div>
-      </div>
-    </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="hero-mockup-wrapper fade-up delay-4">
-      <div class="hero-mockup">
-        <div class="hero-mockup-header">
-          <div class="mac-dots"><span></span><span></span><span></span></div>
-          <div class="mockup-url">webprofissional.com/premium</div>
-        </div>
-        <div class="hero-mockup-body">
-          <div class="mockup-skeleton">
-            <div class="sk-header"></div>
-            <div class="sk-hero"></div>
-            <div class="sk-grid">
-              <div class="sk-card"></div>
-              <div class="sk-card"></div>
-              <div class="sk-card"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal" data-menu>
+        <a href="#projetos">Projetos</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">Perguntas frequentes</a>
+        <a class="button button-small" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20criar%20um%20site.%20Meu%20nome%20%C3%A9%20%5Bnome%5D%20e%20trabalho%20no%20segmento%20de%20%5Bsegmento%5D." target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+      </nav>
     </div>
   </header>
 
-  <section class="stats-section scroll-reveal">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <h3>+40</h3>
-        <p>Projetos Entregues</p>
-      </div>
-      <div class="stat-item">
-        <h3>98%</h3>
-        <p>Clientes Satisfeitos</p>
-      </div>
-      <div class="stat-item">
-        <h3>48h</h3>
-        <p>Tempo de Lançamento</p>
-      </div>
-      <div class="stat-item">
-        <h3>3x</h3>
-        <p>Mais Conversão Média</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="logo-cloud scroll-reveal">
-    <div class="container">
-      <p>Desenvolvemos infraestrutura de vendas para especialistas em:</p>
-      <div class="logos">
-        <span class="logo-item"><i data-lucide="scale" width="20"></i> Direito & Advocacia</span>
-        <span class="logo-item"><i data-lucide="brain" width="20"></i> Saúde Mental</span>
-        <span class="logo-item"><i data-lucide="stethoscope" width="20"></i> Clínicas Médicas</span>
-        <span class="logo-item"><i data-lucide="briefcase" width="20"></i> Consultorias</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding process scroll-reveal" id="processo">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Nosso Método</span>
-        <h2>A anatomia de uma presença inquestionável</h2>
-        <p>Nós cuidamos de absolutamente tudo, do zero ao lançamento, para que você foque apenas em atender seus novos clientes.</p>
-      </div>
-
-      <div class="process-grid">
-        <div class="process-card">
-          <div class="process-step">01</div>
-          <div class="process-icon"><i data-lucide="microscope"></i></div>
-          <h3>Diagnóstico Estratégico</h3>
-          <p>Mapeamos seu público-alvo, seus concorrentes e o seu diferencial único de mercado para definir a estratégia exata.</p>
-        </div>
-        <div class="process-card">
-          <div class="process-step">02</div>
-          <div class="process-icon"><i data-lucide="pen-tool"></i></div>
-          <h3>Copywriting Persuasivo</h3>
-          <p>Escrevemos textos que tocam na dor profunda do seu cliente e elevam o seu serviço à categoria de "única solução lógica".</p>
-        </div>
-        <div class="process-card">
-          <div class="process-step">03</div>
-          <div class="process-icon"><i data-lucide="code-2"></i></div>
-          <h3>Design & UX Premium</h3>
-          <p>Criamos interfaces sofisticadas e sob medida que justificam o alto valor dos seus honorários ou consultas.</p>
-        </div>
-        <div class="process-card">
-          <div class="process-step">04</div>
-          <div class="process-icon"><i data-lucide="shield-check"></i></div>
-          <h3>Lançamento & Blindagem</h3>
-          <p>Código limpo, SEO avançado e manutenção mensal VIP. Seu site seguro, atualizado e convertendo 24h por dia.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding portfolio scroll-reveal" id="portfolio">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Portfólio Premium</span>
-        <h2>Projetos de Alta Performance</h2>
-        <p>Explore as interfaces que desenvolvemos para líderes em seus mercados.</p>
-      </div>
-
-      <div class="portfolio-grid">
-        <!-- Card 1 -->
-        <a href="https://oenningadvocacia.adv.br/" target="_blank" class="portfolio-card">
-          <div class="browser-frame">
-            <div class="mac-dots"><span></span><span></span><span></span></div>
-            <i data-lucide="external-link" width="16" class="ext-icon"></i>
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span> Sites profissionais para empresas e negócios locais</p>
+          <h1>Seu negócio merece um site que transmita confiança e gere novos contatos.</h1>
+          <p class="hero-lead">Crio landing pages e sites institucionais rápidos, responsivos e personalizados, com integração ao WhatsApp, para empresas que desejam apresentar melhor seus serviços e transformar visitas em oportunidades.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projetos">Conhecer meus projetos <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20criar%20um%20site.%20Meu%20nome%20%C3%A9%20%5Bnome%5D%20e%20trabalho%20no%20segmento%20de%20%5Bsegmento%5D." target="_blank" rel="noopener noreferrer">Solicitar orçamento pelo WhatsApp</a>
           </div>
-          <div class="preview-area adv-bg-1">
-            <div class="preview-mockup">
-              <div class="pm-header"></div>
-              <div class="pm-hero"></div>
-              <div class="pm-split">
-                <div class="pm-box"></div>
-                <div class="pm-box"></div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-info">
-            <span class="niche">Advocacia Full-Service</span>
-            <h3>Oenning Advocacia</h3>
-            <div class="portfolio-metrics">
-              <div class="metric">
-                <span class="metric-val">+42%</span>
-                <span class="metric-label">Captura Leads</span>
-              </div>
-              <div class="metric">
-                <span class="metric-val">0.8s</span>
-                <span class="metric-label">Load Time</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <!-- Card 2 -->
-        <a href="https://dev-sandro.github.io/modelo-Gabriela/" target="_blank" class="portfolio-card">
-          <div class="browser-frame">
-            <div class="mac-dots"><span></span><span></span><span></span></div>
-            <i data-lucide="external-link" width="16" class="ext-icon"></i>
-          </div>
-          <div class="preview-area psi-bg">
-            <div class="preview-mockup">
-              <div class="pm-header"></div>
-              <div class="pm-hero-large"></div>
-            </div>
-          </div>
-          <div class="portfolio-info">
-            <span class="niche">Clínica de Psicologia</span>
-            <h3>Modelo Gabriela</h3>
-            <div class="portfolio-metrics">
-              <div class="metric">
-                <span class="metric-val">3x</span>
-                <span class="metric-label">Agendamentos</span>
-              </div>
-              <div class="metric">
-                <span class="metric-val">100/100</span>
-                <span class="metric-label">Acessibilidade</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a href="https://dev-sandro.github.io/modelo-psi/" target="_blank" class="portfolio-card">
-          <div class="browser-frame">
-            <div class="mac-dots"><span></span><span></span><span></span></div>
-            <i data-lucide="external-link" width="16" class="ext-icon"></i>
-          </div>
-          <div class="preview-area psi-bg-alt">
-            <div class="preview-mockup">
-              <div class="pm-nav"></div>
-              <div class="pm-content-block"></div>
-            </div>
-          </div>
-          <div class="portfolio-info">
-            <span class="niche">Saúde Mental / Terapias</span>
-            <h3>Modelo Psicologia</h3>
-            <div class="portfolio-metrics">
-              <div class="metric">
-                <span class="metric-val">+55%</span>
-                <span class="metric-label">Conversão Mobile</span>
-              </div>
-              <div class="metric">
-                <span class="metric-val">1.1s</span>
-                <span class="metric-label">Load Time</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <!-- Card 4 -->
-        <a href="https://dev-sandro.github.io/modelo-advocacia/" target="_blank" class="portfolio-card">
-          <div class="browser-frame">
-            <div class="mac-dots"><span></span><span></span><span></span></div>
-            <i data-lucide="external-link" width="16" class="ext-icon"></i>
-          </div>
-          <div class="preview-area adv-bg-2">
-            <div class="preview-mockup">
-              <div class="pm-hero-dark"></div>
-              <div class="pm-text-block"></div>
-            </div>
-          </div>
-          <div class="portfolio-info">
-            <span class="niche">Advocacia Institucional</span>
-            <h3>Modelo Advocacia</h3>
-            <div class="portfolio-metrics">
-              <div class="metric">
-                <span class="metric-val">SEO</span>
-                <span class="metric-label">Top Google</span>
-              </div>
-              <div class="metric">
-                <span class="metric-val">1.2s</span>
-                <span class="metric-label">Load Time</span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding theme-customizer scroll-reveal">
-    <div class="container section-header" style="margin-bottom: 3rem;">
-      <span class="tag">Design System</span>
-      <h2>Arquitetura Baseada em Dados</h2>
-      <p>Testamos contrastes e acessibilidade para garantir que seu site transmita confiança. Experimente a troca de contexto em tempo real.</p>
-
-      <div class="palette-grid">
-        <button class="palette-btn active" onclick="setTheme('theme-corporate', this)">
-          <div class="preview preview-corp"></div>
-          <span>Corporativo</span>
-        </button>
-        <button class="palette-btn" onclick="setTheme('theme-elegant', this)">
-          <div class="preview preview-eleg"></div>
-          <span>Luxo & Direito</span>
-        </button>
-        <button class="palette-btn" onclick="setTheme('theme-health', this)">
-          <div class="preview preview-heal"></div>
-          <span>Saúde</span>
-        </button>
-        <button class="palette-btn" onclick="setTheme('theme-tech', this)">
-          <div class="preview preview-tech"></div>
-          <span>Tech / SaaS</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding about-section scroll-reveal" id="sobre">
-    <div class="container about-grid">
-      <div class="about-image-wrapper">
-        <div class="about-image">
-          <div class="glow-orb"></div>
-          <i data-lucide="layers" size="80" class="about-icon"></i>
-        </div>
-        <div class="experience-badge">
-          <span class="exp-num">MBA</span>
-          <span class="exp-text">Data Science<br>USP</span>
-        </div>
-      </div>
-      <div class="about-content">
-        <span class="tag">O Especialista</span>
-        <h2>Não somos "criadores de sites". Somos engenheiros de conversão.</h2>
-        <p class="lead-text">Olá, sou o <strong>Sandro</strong>. Entendo uma regra básica do mercado de alto valor: se você cobra caro pelo seu serviço, o seu posicionamento digital precisa justificar esse preço.</p>
-        <p>Profissionais de elite não precisam de um "panfleto digital bonitinho". Vocês precisam de um ecossistema digital implacável. Uma ferramenta de negócios que argumente por você 24 horas por dia, transmita confiança imediata e converta visitantes frios em clientes high-ticket.</p>
-
-        <div class="expertise-list">
-          <div class="expertise-item">
-            <div class="exp-icon"><i data-lucide="layout-template"></i></div>
-            <span>Especialista em UI/UX e Psicologia de Vendas</span>
-          </div>
-          <div class="expertise-item">
-            <div class="exp-icon"><i data-lucide="zap"></i></div>
-            <span>Arquitetura Front-end Avançada (Performance extrema)</span>
-          </div>
-          <div class="expertise-item">
-            <div class="exp-icon"><i data-lucide="shield"></i></div>
-            <span>Assessoria Mensal: Hospedagem VIP e Suporte Concierge</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding testimonials scroll-reveal">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Social Proof</span>
-        <h2>Resultados que falam por si</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p class="quote">"Desde que lançamos o novo site do escritório, o perfil dos clientes mudou drasticamente. Paramos de receber curiosos pedindo desconto e começamos a fechar contratos de alto valor. O design transmite exatamente a seriedade e o peso do nosso trabalho."</p>
-          <div class="client-info">
-            <div class="client-avatar">M</div>
-            <div class="client-details">
-              <h4>Dr. Marcos Oenning</h4>
-              <span>Sócio de Advocacia Full-Service</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p class="quote">"Eu dependia 100% do Instagram e vivia escrava de criar conteúdo. O site me deu previsibilidade. Hoje, pacientes chegam pelo Google já decididos a agendar a consulta. O investimento se pagou na primeira semana."</p>
-          <div class="client-info">
-            <div class="client-avatar">G</div>
-            <div class="client-details">
-              <h4>Dra. Gabriela</h4>
-              <span>Psicóloga Clínica</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i><i data-lucide="star" fill="currentColor" width="16"></i>
-          </div>
-          <p class="quote">"Design nível agência multinacional, mas com um atendimento ágil e direto. Recomendo para qualquer pessoa que vende serviço high-ticket e precisa parar de parecer amador na internet."</p>
-          <div class="client-info">
-            <div class="client-avatar">R</div>
-            <div class="client-details">
-              <h4>Ricardo Alves</h4>
-              <span>Consultor Financeiro</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding plans scroll-reveal" id="planos">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Planos & Preços</span>
-        <h2>Investimento transparente. Sem taxas ocultas.</h2>
-        <p>Escolha a infraestrutura ideal para o momento do seu negócio.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <div class="plan-card">
-          <div class="plan-header">
-            <h3>Presença Essencial</h3>
-            <p>A fundação perfeita para autônomos e profissionais liberais que precisam de um site ágil e profissional.</p>
-          </div>
-          
-          <div class="price-tag">
-            <span class="currency">R$</span>
-            <div class="price-wrapper">
-              <span class="old-price" id="old-price-display"></span>
-              <span class="value" id="current-price-display">349</span>
-            </div>
-          </div>
-          
-          <div class="tag-payment"><i data-lucide="credit-card" width="16"></i> Pagamento único — s/ mensalidade</div>
-          
-          <ul class="features">
-            <li><i data-lucide="check-circle-2"></i> <span>Landing Page de Alta Conversão</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Design Premium e Responsivo</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Copywriting Estratégico (Gatilhos)</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Botão flutuante do WhatsApp</span></li>
-            <li class="disabled"><i data-lucide="minus"></i> <span>Integração de Pixel (Meta/Google)</span></li>
-            <li class="disabled"><i data-lucide="minus"></i> <span>SEO Avançado e Automação CRM</span></li>
+          <ul class="quality-strip" aria-label="Diferenciais do serviço">
+            <li>Design personalizado</li>
+            <li>Responsivo</li>
+            <li>Integração com WhatsApp</li>
+            <li>Atendimento direto</li>
+            <li>Entrega em até 48 horas</li>
           </ul>
-          
-          <a href="https://wa.me/554699385946?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial." class="btn btn-outline full-width track-wpp" target="_blank">Iniciar Projeto</a>
         </div>
 
-        <div class="plan-card elite">
-          <div class="elite-glow"></div>
-          <div class="badge-best">Recomendado para Tráfego Pago</div>
-          <div class="plan-header">
-            <h3>Agência Completa</h3>
-            <p>A solução end-to-end para clínicas, escritórios e empresas que querem dominar o mercado.</p>
-          </div>
-          
-          <div class="price-tag custom-price">
-            <span class="value">Sob Medida</span>
-          </div>
-          
-          <div class="tag-payment highlight-tag"><i data-lucide="search" width="16"></i> Orçamento após diagnóstico</div>
-          
-          <ul class="features">
-            <li class="feature-title"><i data-lucide="layers"></i> <strong>Tudo do Essencial, mais:</strong></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Site Institucional Completo (Múltiplas Páginas)</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Design 100% Exclusivo Figma</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Copywriting Avançado (Dor/Desejo)</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Integração de Pixel (Meta/Google/TikTok)</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>Automação de Leads direta para o CRM</span></li>
-            <li><i data-lucide="check-circle-2"></i> <span>SEO Avançado para Buscas Orgânicas</span></li>
-          </ul>
-          
-          <a href="https://wa.me/554699385946?text=Olá,%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito%20para%20o%20Plano%20Completo." class="btn btn-primary full-width track-wpp" target="_blank">Agendar Diagnóstico Estratégico</a>
+        <div class="hero-showcase" aria-label="Prévia de projetos desenvolvidos">
+          <div class="showcase-glow" aria-hidden="true"></div>
+          <figure class="project-window project-window-back">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>silvestro-engenharia.pages.dev</small></div>
+            <img src="assets/images/silvestro-engenharia.webp" width="1265" height="708" alt="Página inicial do site Silvestro Engenharia" fetchpriority="high">
+          </figure>
+          <figure class="project-window project-window-front">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>club-house-beltr-o.pages.dev</small></div>
+            <img src="assets/images/club-house-beltrao.webp" width="1265" height="708" alt="Página inicial da landing page Club House Beltrão" fetchpriority="high">
+          </figure>
+          <div class="showcase-note"><strong>Projetos reais.</strong><span>Experiências pensadas para cada segmento.</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="guarantee scroll-reveal">
-    <div class="container guarantee-box">
-      <div class="guarantee-icon"><i data-lucide="shield-check" size="48"></i></div>
-      <h2>Garantia de Risco Zero e Satisfação Absoluta</h2>
-      <p>Nós não entregamos projetos "mais ou menos". O seu site só vai para o ar quando você aprovar 100% da interface, do texto e da funcionalidade. Se o projeto não refletir a excelência do seu trabalho no mundo físico, nós refazemos até ficar perfeito. O seu sucesso é o nosso portfólio.</p>
-    </div>
-  </section>
-
-  <section class="section-padding referral-section scroll-reveal">
-    <div class="container">
-      <div class="referral-container">
-        <div class="ref-bg-glow"></div>
-        <div class="ref-icon">
-          <i data-lucide="ticket-percent" size="40"></i>
-        </div>
-        <div class="ref-content">
-          <h3>Você possui um convite VIP?</h3>
-          <p>Insira seu código de indicação ou parceria para recalcular sua proposta automaticamente.</p>
-          <div class="coupon-box">
-            <input type="text" placeholder="Ex: PROMO10" id="couponInput" autocomplete="off">
-            <button class="btn-apply" onclick="applyAndAnimateCoupon()">Validar Benefício</button>
+    <section class="section portfolio" id="projetos">
+      <div class="container">
+        <header class="section-heading section-heading-wide reveal">
+          <div>
+            <p class="section-kicker">Portfólio</p>
+            <h2>Projetos desenvolvidos</h2>
           </div>
-          <p id="coupon-msg" class="coupon-msg"></p>
+          <p>Conheça algumas possibilidades de estrutura, identidade e experiência que posso desenvolver para diferentes segmentos.</p>
+        </header>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <a class="project-preview" href="https://silvestro-engenharia.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar o projeto Silvestro Engenharia em nova guia">
+              <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>silvestro-engenharia.pages.dev</small></div>
+              <img src="assets/images/silvestro-engenharia.webp" width="1265" height="708" loading="lazy" alt="Screenshot do site institucional Silvestro Engenharia">
+            </a>
+            <div class="portfolio-content">
+              <p class="project-category">Engenharia e construção</p>
+              <h3>Silvestro Engenharia</h3>
+              <p>Site institucional desenvolvido para apresentar a empresa, seus serviços, obras, diferenciais, galeria e canais de solicitação de orçamento.</p>
+              <ul class="tag-list" aria-label="Características do projeto">
+                <li>Site institucional</li><li>Portfólio</li><li>Formulário</li><li>WhatsApp</li><li>Responsivo</li>
+              </ul>
+              <a class="text-link" href="https://silvestro-engenharia.pages.dev/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <a class="project-preview" href="https://club-house-beltr-o.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar o projeto Club House Beltrão em nova guia">
+              <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>club-house-beltr-o.pages.dev</small></div>
+              <img src="assets/images/club-house-beltrao.webp" width="1265" height="708" loading="lazy" alt="Screenshot da landing page imobiliária Club House Beltrão">
+            </a>
+            <div class="portfolio-content">
+              <p class="project-category">Mercado imobiliário</p>
+              <h3>Club House Beltrão</h3>
+              <p>Landing page desenvolvida para apresentar o empreendimento, apartamentos, áreas de lazer, condições comerciais, localização e atendimento pelo WhatsApp.</p>
+              <ul class="tag-list" aria-label="Características do projeto">
+                <li>Landing imobiliária</li><li>Galeria</li><li>Localização</li><li>Condições comerciais</li><li>Captação de contatos</li>
+              </ul>
+              <a class="text-link" href="https://club-house-beltr-o.pages.dev/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <a class="project-preview" href="https://oenningadvocacia.adv.br/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar o projeto Oenning Advocacia em nova guia">
+              <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>oenningadvocacia.adv.br</small></div>
+              <img src="assets/images/oenning-advocacia.webp" width="1265" height="708" loading="lazy" alt="Screenshot do site institucional Oenning Advocacia e Assessoria Jurídica">
+            </a>
+            <div class="portfolio-content">
+              <p class="project-category">Advocacia</p>
+              <h3>Oenning Advocacia</h3>
+              <p>Site institucional desenvolvido para apresentar o escritório, seus diferenciais, áreas de atuação, perfil profissional, dúvidas frequentes e canais de atendimento.</p>
+              <ul class="tag-list" aria-label="Características do projeto">
+                <li>Site institucional</li><li>Áreas de atuação</li><li>FAQ</li><li>Mapa</li><li>WhatsApp</li><li>Responsivo</li>
+              </ul>
+              <a class="text-link" href="https://oenningadvocacia.adv.br/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <a class="project-preview" href="https://dev-sandro.github.io/modelo-psi/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar o projeto demonstrativo de psicologia em nova guia">
+              <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><small>dev-sandro.github.io/modelo-psi</small></div>
+              <img src="assets/images/modelo-psi.webp" width="1265" height="708" loading="lazy" alt="Screenshot do projeto demonstrativo de site para psicologia e saúde mental">
+              <span class="demo-badge">Projeto demonstrativo</span>
+            </a>
+            <div class="portfolio-content">
+              <p class="project-category">Psicologia e saúde mental</p>
+              <h3>Modelo Psicologia</h3>
+              <p>Projeto demonstrativo criado para apresentar uma clínica, sua abordagem, processo de acolhimento, especialidades, equipe e caminhos para agendamento.</p>
+              <ul class="tag-list" aria-label="Características do projeto">
+                <li>Projeto demonstrativo</li><li>Serviços</li><li>Metodologia</li><li>WhatsApp</li><li>Responsivo</li>
+              </ul>
+              <a class="text-link" href="https://dev-sandro.github.io/modelo-psi/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand-wrapper" style="margin-bottom: 1.5rem;">
-            <div class="brand-logo small">WP</div>
-            <span class="wp-nome">Web Profissional</span>
-          </div>
-          <p>Elevando o padrão de conversão na internet. Desenvolvemos infraestrutura de vendas para especialistas de alto valor.</p>
+    <section class="section benefits" id="beneficios">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">Pensado para o seu negócio</p>
+          <h2>Mais do que um site bonito</h2>
+          <p>Uma presença digital precisa combinar boa apresentação, facilidade de uso e caminhos claros para o contato.</p>
+        </header>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal"><span class="card-index">01</span><h3>Aparência profissional</h3><p>Uma apresentação digital alinhada à qualidade do trabalho realizado pela empresa.</p></article>
+          <article class="benefit-card reveal"><span class="card-index">02</span><h3>Experiência no celular</h3><p>Layout criado para funcionar corretamente em smartphones, tablets e computadores.</p></article>
+          <article class="benefit-card reveal"><span class="card-index">03</span><h3>Contato facilitado</h3><p>Botões e formulários integrados ao WhatsApp para reduzir as etapas até o atendimento.</p></article>
+          <article class="benefit-card reveal"><span class="card-index">04</span><h3>Carregamento rápido</h3><p>Código organizado e imagens otimizadas para oferecer uma navegação fluida.</p></article>
+          <article class="benefit-card reveal"><span class="card-index">05</span><h3>Estrutura personalizada</h3><p>Cores, textos e seções adaptados ao segmento e aos objetivos de cada cliente.</p></article>
+          <article class="benefit-card reveal"><span class="card-index">06</span><h3>Atendimento direto</h3><p>Contato com o próprio desenvolvedor durante todas as etapas do projeto.</p></article>
         </div>
-        <div class="footer-links">
-          <h4>Navegação</h4>
+      </div>
+    </section>
+
+    <section class="section process" id="processo">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">Do briefing à publicação</p>
+          <h2>Um processo claro em quatro etapas</h2>
+          <p>Você acompanha a evolução do projeto e sabe o que esperar em cada momento.</p>
+        </header>
+
+        <ol class="process-list">
+          <li class="reveal"><span>01</span><div><h3>Conversa inicial</h3><p>Entendimento da empresa, dos serviços, do público e do objetivo do site.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Organização do conteúdo</h3><p>Definição das seções, textos, imagens, identidade visual e chamadas para ação.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Desenvolvimento</h3><p>Criação da versão responsiva e apresentação de uma prévia para avaliação.</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>Ajustes e publicação</h3><p>Aplicação das alterações, aprovação final, registro ou configuração do domínio e publicação do site.</p></div></li>
+        </ol>
+
+        <p class="process-note reveal"><strong>Prazo de entrega:</strong> até 48 horas após o recebimento de todos os materiais e a definição do escopo. Recursos adicionais que alterem esse prazo são combinados antes do início.</p>
+      </div>
+    </section>
+
+    <section class="section pricing" id="servicos">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">Serviços e preços</p>
+          <h2>Escolha o ponto de partida ideal</h2>
+          <p>Valores transparentes para estruturas bem definidas. O orçamento final considera as necessidades do seu projeto.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="plan-type">Página objetiva</p>
+            <h3>Landing Essencial</h3>
+            <p class="price"><span>A partir de</span> R$ 697</p>
+            <p class="plan-for">Para profissionais e pequenos negócios que precisam de presença profissional na internet.</p>
+            <ul class="check-list">
+              <li>Página única</li><li>Até cinco seções</li><li>Personalização de cores e conteúdo</li><li>Responsividade</li><li>Botão do WhatsApp</li><li>SEO básico</li><li>Uma rodada de alterações</li>
+            </ul>
+            <a class="button button-outline" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Tenho%20interesse%20na%20Landing%20Essencial%20e%20gostaria%20de%20receber%20uma%20proposta." target="_blank" rel="noopener noreferrer">Conversar sobre este plano</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <p class="popular-badge">Mais procurado</p>
+            <p class="plan-type">Presença comercial completa</p>
+            <h3>Landing Profissional</h3>
+            <p class="price"><span>A partir de</span> R$ 1.290</p>
+            <p class="plan-for">Para empresas que desejam apresentar seus serviços e gerar contatos.</p>
+            <ul class="check-list">
+              <li>Design personalizado</li><li>Até oito seções</li><li>Ajuda na organização dos textos</li><li>Galeria ou portfólio</li><li>Formulário integrado ao WhatsApp</li><li>SEO básico</li><li>Duas rodadas de alterações</li>
+            </ul>
+            <a class="button" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Tenho%20interesse%20na%20Landing%20Profissional%20e%20gostaria%20de%20receber%20uma%20proposta." target="_blank" rel="noopener noreferrer">Conversar sobre este plano</a>
+          </article>
+
+          <article class="price-card reveal">
+            <p class="plan-type">Estrutura mais completa</p>
+            <h3>Site Institucional</h3>
+            <p class="price"><span>A partir de</span> R$ 1.990</p>
+            <p class="plan-for">Para empresas que precisam de uma estrutura com mais páginas e conteúdo.</p>
+            <ul class="check-list">
+              <li>Até cinco páginas</li><li>Design personalizado</li><li>Página da empresa</li><li>Serviços</li><li>Portfólio ou projetos</li><li>Formulário de contato</li><li>Registro e configuração de domínio</li><li>SEO técnico básico</li><li>Duas rodadas de alterações</li>
+            </ul>
+            <a class="button button-outline" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Tenho%20interesse%20no%20Site%20Institucional%20e%20gostaria%20de%20receber%20uma%20proposta." target="_blank" rel="noopener noreferrer">Conversar sobre este plano</a>
+          </article>
+        </div>
+
+        <div class="commercial-terms reveal">
+          <h3>Condições comerciais</h3>
           <ul>
-            <li><a href="#processo">Como Funciona</a></li>
-            <li><a href="#portfolio">Projetos de Sucesso</a></li>
-            <li><a href="#sobre">Quem Sou</a></li>
-            <li><a href="#planos">Investimento</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Contato Direto</h4>
-          <ul>
-            <li><a href="https://wa.me/554699385946" target="_blank" class="track-wpp"><i data-lucide="smartphone" width="16"></i> WhatsApp Comercial</a></li>
-            <li><a href="#"><i data-lucide="video" width="16"></i> Agendar Reunião Zoom</a></li>
-            <li><a href="#"><i data-lucide="mail" width="16"></i> contato@webprofissional.com</a></li>
+            <li>Pagamento de 50% no início e 50% após a aprovação, antes da publicação.</li>
+            <li>A taxa anual do domínio não está incluída; o registro e a configuração podem ser feitos por mim.</li>
+            <li>Hospedagem gratuita pode ser utilizada quando tecnicamente adequada.</li>
+            <li>Recursos adicionais são orçados separadamente.</li>
+            <li>Nenhuma mensalidade é obrigatória.</li>
+            <li>Manutenção posterior é opcional.</li>
+            <li>Quando necessário, o código pode ficar armazenado em meu repositório para publicação ou manutenção.</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Web Profissional. Todos os direitos reservados.</p>
-        <p class="footer-made-with">Desenvolvido com foco extremo em performance <i data-lucide="zap" width="14"></i></p>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-card reveal" aria-label="Perfil de Sandro Sousa dos Anjos">
+          <div class="about-monogram" aria-hidden="true">S</div>
+          <p>Desenvolvedor de software</p>
+          <h3>Sandro Sousa dos Anjos</h3>
+          <span>Atendimento remoto para todo o Brasil</span>
+          <div class="about-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="section-kicker">Sobre Sandro</p>
+          <h2>Tecnologia e atendimento direto em cada projeto.</h2>
+          <p>Sou Sandro Sousa dos Anjos, desenvolvedor com cinco anos de experiência em tecnologia, automação e sistemas empresariais. Ao longo da minha carreira, trabalhei com desenvolvimento, integrações, APIs, bancos de dados e soluções utilizadas por grandes instituições financeiras.</p>
+          <p>Utilizo essa experiência técnica para criar sites rápidos, organizados e profissionais, sempre considerando os objetivos e a identidade de cada negócio. Durante o projeto, o atendimento é feito diretamente comigo, desde a conversa inicial até a publicação.</p>
+          <ul class="credential-list">
+            <li>Desenvolvedor de software</li>
+            <li>MBA em Data Science e Analytics pela USP</li>
+            <li>Experiência com automação e sistemas empresariais</li>
+            <li>Atendimento remoto para todo o Brasil</li>
+          </ul>
+        </div>
       </div>
+    </section>
+
+    <section class="section commitment" id="compromisso">
+      <div class="container commitment-grid">
+        <div class="commitment-copy reveal">
+          <p class="section-kicker">Confiança no processo</p>
+          <h2>Compromisso com cada entrega</h2>
+          <p>Um projeto profissional começa com acordos claros e termina somente depois da sua avaliação.</p>
+          <a class="text-link" href="#faq">Tirar outras dúvidas <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="commitment-list reveal">
+          <li>Escopo definido antes do início</li>
+          <li>Prévia para avaliação</li>
+          <li>Alterações previstas na proposta</li>
+          <li>Site publicado somente após aprovação</li>
+          <li>Código organizado</li>
+          <li>Atendimento direto</li>
+          <li>Orientação após a entrega</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <header class="section-heading reveal">
+          <p class="section-kicker">Perguntas frequentes</p>
+          <h2>Informações importantes antes de começar</h2>
+          <p>Se sua dúvida não estiver aqui, envie uma mensagem e eu respondo diretamente.</p>
+        </header>
+
+        <div class="faq-list reveal">
+          <details><summary>O domínio está incluído?<span aria-hidden="true">+</span></summary><p>A taxa anual do domínio é paga separadamente e o registro fica em nome do cliente. Posso cuidar da escolha, do registro e de toda a configuração técnica.</p></details>
+          <details><summary>Existe mensalidade?<span aria-hidden="true">+</span></summary><p>Não existe mensalidade obrigatória. Quando tecnicamente adequada, a hospedagem gratuita pode ser utilizada. Manutenção e suporte contínuo são opcionais.</p></details>
+          <details><summary>Quem fornece os textos e imagens?<span aria-hidden="true">+</span></summary><p>O cliente fornece as informações, fotos e materiais disponíveis. No plano Profissional, ajudo a organizar os textos. Produção de conteúdo ou imagens adicionais pode ser orçada à parte.</p></details>
+          <details><summary>Quantas alterações posso solicitar?<span aria-hidden="true">+</span></summary><p>A Landing Essencial inclui uma rodada de alterações. A Landing Profissional e o Site Institucional incluem duas rodadas, sempre dentro do escopo aprovado.</p></details>
+          <details><summary>Quanto tempo demora?<span aria-hidden="true">+</span></summary><p>A entrega é feita em até 48 horas após o recebimento de todos os materiais e a definição do escopo. Se houver recursos adicionais que exijam mais tempo, o novo prazo é combinado antes do início.</p></details>
+          <details><summary>O site funciona no celular?<span aria-hidden="true">+</span></summary><p>Sim. O layout é desenvolvido e revisado para smartphones, tablets e computadores.</p></details>
+          <details><summary>O site aparecerá no Google?<span aria-hidden="true">+</span></summary><p>O projeto inclui configurações básicas para facilitar a indexação. A posição nos resultados depende de diversos fatores e não pode ser garantida.</p></details>
+          <details><summary>Como funciona o pagamento?<span aria-hidden="true">+</span></summary><p>São 50% no início do projeto e 50% após a aprovação final, antes da publicação.</p></details>
+          <details><summary>Terei acesso aos arquivos?<span aria-hidden="true">+</span></summary><p>Sim. Após a quitação, os arquivos podem ser entregues ao cliente. Se for mais conveniente, o código também pode ficar armazenado em meu repositório para publicação, suporte ou manutenção, conforme combinado.</p></details>
+          <details><summary>Posso contratar manutenção posteriormente?<span aria-hidden="true">+</span></summary><p>Sim. Ajustes, atualizações e manutenção podem ser contratados quando houver necessidade, sem obrigação mensal.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contato">
+      <div class="container final-cta-inner reveal">
+        <p class="section-kicker">Seu próximo passo</p>
+        <h2>Vamos criar uma presença profissional para o seu negócio?</h2>
+        <p>Conte um pouco sobre sua empresa e receba uma sugestão de estrutura, prazo e investimento para o seu projeto.</p>
+        <a class="button button-light" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20criar%20um%20site.%20Meu%20nome%20%C3%A9%20%5Bnome%5D%20e%20trabalho%20no%20segmento%20de%20%5Bsegmento%5D." target="_blank" rel="noopener noreferrer">Solicitar orçamento pelo WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio">Sandro <strong>Web</strong><span class="brand-dot" aria-hidden="true"></span></a>
+        <p>Sites profissionais para negócios que querem crescer.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Navegação</h2>
+        <a href="#projetos">Projetos</a><a href="#processo">Como funciona</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#faq">Perguntas frequentes</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Contato</h2>
+        <a href="https://wa.me/554699385946" target="_blank" rel="noopener noreferrer">WhatsApp: (46) 9938-5946</a>
+        <a href="mailto:contato@webprofissional.com">contato@webprofissional.com</a>
+        <a href="https://www.linkedin.com/in/dev-sandro-sousa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/DEV-Sandro" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Sandro Web. Todos os direitos reservados.</p>
+      <p>Desenvolvido com atenção a desempenho e acessibilidade.</p>
     </div>
   </footer>
 
-  <script>
-    // Inicialização de ícones Lucide
-    lucide.createIcons();
+  <a class="whatsapp-float" href="https://wa.me/554699385946?text=Ol%C3%A1%2C%20Sandro%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20criar%20um%20site.%20Meu%20nome%20%C3%A9%20%5Bnome%5D%20e%20trabalho%20no%20segmento%20de%20%5Bsegmento%5D." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
+    <span aria-hidden="true">WA</span> Orçamento
+  </a>
 
-    // Observer para revelar elementos no scroll (Fade Up)
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => { 
-        if(entry.isIntersecting) {
-          entry.target.classList.add('active'); 
-          observer.unobserve(entry.target); // Anima apenas uma vez
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
-
-    // Ativar elementos da hero ao carregar
-    window.addEventListener('load', () => {
-      document.querySelectorAll('.fade-up').forEach(el => el.classList.add('active'));
-    });
-
-    // Lógica de Temas
-    function setTheme(themeName, element) {
-      document.body.className = themeName;
-      document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
-      element.classList.add('active');
-    }
-
-    // Lógica Analytics (Eventos Simulados)
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.track-wpp').forEach(button => {
-        button.addEventListener('click', () => {
-          console.log('Evento disparado: click_whatsapp');
-        });
-      });
-
-      document.querySelectorAll('.track-planos').forEach(button => {
-        button.addEventListener('click', () => {
-          console.log('Evento disparado: click_ver_planos');
-        });
-      });
-    });
-
-    // Lógica de Cupom com Animação
-    function applyAndAnimateCoupon() {
-      const input = document.getElementById('couponInput');
-      const msg = document.getElementById('coupon-msg');
-      const oldPriceEl = document.getElementById('old-price-display');
-      const currentPriceEl = document.getElementById('current-price-display');
-        
-      const code = input.value.toUpperCase().trim();
-        
-      const validCoupons = {
-        'PROMO10': 0.10, 
-        'DESCONTO20': 0.20 
-      };
-
-      msg.className = 'coupon-msg';
-      currentPriceEl.classList.remove('price-highlight');
-
-      if (validCoupons.hasOwnProperty(code)) {
-        const basePrice = 349.00;
-        const discountPercent = validCoupons[code];
-        const newPrice = basePrice - (basePrice * discountPercent);
-
-        oldPriceEl.textContent = "R$ " + basePrice.toFixed(0);
-        oldPriceEl.classList.add('show');
-            
-        setTimeout(() => {
-          currentPriceEl.textContent = newPrice.toFixed(0);
-          currentPriceEl.classList.add('price-highlight');
-        }, 150); 
-
-        msg.innerHTML = `<i data-lucide="check-circle-2" width="16"></i> Benefício aplicado! Desconto de ${discountPercent * 100}% ativado.`;
-        msg.classList.add('success');
-        lucide.createIcons();
-
-        setTimeout(() => {
-          document.getElementById('planos').scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 800);
-
-      } else {
-        msg.innerHTML = `<i data-lucide="x-circle" width="16"></i> Código inválido ou expirado. Verifique e tente novamente.`;
-        msg.classList.add('error');
-        oldPriceEl.classList.remove('show');
-        currentPriceEl.textContent = "349"; 
-        lucide.createIcons();
-      }
-    }
-  </script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>

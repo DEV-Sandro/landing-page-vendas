@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://justapro.com.br/sitemap.xml
+Sitemap: https://dev-sandro.github.io/landing-page-vendas/sitemap.xml

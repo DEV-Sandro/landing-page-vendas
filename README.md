@@ -4,7 +4,7 @@ Landing page comercial de Sandro Sousa dos Anjos para apresentação dos serviç
 
 ## Acesso
 
-[https://justapro.com.br/](https://justapro.com.br/)
+[https://dev-sandro.github.io/landing-page-vendas/](https://dev-sandro.github.io/landing-page-vendas/)
 
 ## Estrutura
 

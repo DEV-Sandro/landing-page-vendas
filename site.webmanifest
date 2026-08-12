@@ -1,16 +1,16 @@
 {
-  "name": "Sandro Web",
-  "short_name": "Sandro Web",
-  "description": "Sites profissionais para negócios que querem crescer.",
+  "name": "Mapa Digital",
+  "short_name": "Mapa Digital",
+  "description": "Presença digital para negócios que querem ser encontrados.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0c2340",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ccff00",
   "icons": [
     {
-      "src": "assets/images/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "assets/images/mapa-digital-pin.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }

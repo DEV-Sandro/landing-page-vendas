@@ -1,6 +1,6 @@
-# Sandro Web
+# Mapa Digital
 
-Landing page comercial de Sandro Sousa dos Anjos para apresentação dos serviços de criação de landing pages e sites institucionais.
+Landing page comercial da Mapa Digital para apresentar serviços de presença digital, criação de sites, integrações e estruturas para performance.
 
 ## Acesso
 

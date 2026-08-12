@@ -97,27 +97,27 @@
       .consent-banner {
         position: fixed; z-index: 1000; right: 20px; bottom: 20px;
         width: min(560px, calc(100% - 40px)); padding: 22px;
-        border: 1px solid #dfe5ec; border-radius: 18px; background: #fff;
-        box-shadow: 0 24px 70px rgba(12, 35, 64, .22);
-        color: #132238; font-family: Inter, system-ui, sans-serif;
+        border: 1px solid rgba(255, 255, 255, .16); border-radius: 4px; background: #141414;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, .55);
+        color: #ededed; font-family: Inter, system-ui, sans-serif;
       }
-      .consent-banner__title { margin: 0 0 8px; color: #07182c; font-size: 1.08rem; line-height: 1.3; }
-      .consent-banner__text { margin: 0; color: #5d6b7e; font-size: .9rem; line-height: 1.6; }
+      .consent-banner__title { margin: 0 0 8px; color: #ededed; font-size: 1.08rem; line-height: 1.3; }
+      .consent-banner__text { margin: 0; color: #a1a1a1; font-size: .9rem; line-height: 1.6; }
       .consent-banner__text a {
         display: inline; min-height: 0; padding: 0; border-radius: 0; background: transparent;
-        color: #155ac6; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
+        color: #ccff00; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
       }
-      .consent-banner__text a:hover { background: transparent; color: #0c4fae; }
+      .consent-banner__text a:hover { background: transparent; color: #dbff4d; }
       .consent-banner__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
       .consent-banner__button {
-        min-height: 44px; padding: 10px 16px; border: 1px solid #1f6feb;
-        border-radius: 9px; background: #1f6feb; color: #fff; cursor: pointer;
+        min-height: 44px; padding: 10px 16px; border: 1px solid #ccff00;
+        border-radius: 3px; background: #ccff00; color: #070707; cursor: pointer;
         font: 700 .86rem/1 Inter, system-ui, sans-serif;
       }
-      .consent-banner__button:hover { background: #155ac6; }
-      .consent-banner__button--secondary { border-color: #cbd5e1; background: #fff; color: #132238; }
-      .consent-banner__button--secondary:hover { background: #f1f5f9; }
-      .consent-banner__button:focus-visible { outline: 3px solid #79b1ff; outline-offset: 3px; }
+      .consent-banner__button:hover { background: #dbff4d; }
+      .consent-banner__button--secondary { border-color: rgba(255, 255, 255, .22); background: transparent; color: #ededed; }
+      .consent-banner__button--secondary:hover { background: #202020; }
+      .consent-banner__button:focus-visible { outline: 3px solid #ccff00; outline-offset: 3px; }
       @media (max-width: 560px) {
         .consent-banner { right: 12px; bottom: 12px; width: calc(100% - 24px); padding: 18px; }
         .consent-banner__actions { display: grid; }

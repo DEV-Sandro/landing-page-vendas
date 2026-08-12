@@ -1,5 +1,27 @@
 document.documentElement.classList.add("js");
 
+const themeChoices = [...document.querySelectorAll("[data-theme-choice]")];
+const storedTheme = localStorage.getItem("mapa-digital-theme");
+const initialTheme = storedTheme === "amber" ? "amber" : "acid";
+
+function applyTheme(theme) {
+  const selectedTheme = theme === "amber" ? "amber" : "acid";
+  document.documentElement.dataset.theme = selectedTheme;
+  document.querySelector('meta[name="theme-color"]')?.setAttribute(
+    "content",
+    selectedTheme === "amber" ? "#ffb800" : "#0a0a0a"
+  );
+  themeChoices.forEach((choice) => {
+    choice.setAttribute("aria-pressed", String(choice.dataset.themeChoice === selectedTheme));
+  });
+  localStorage.setItem("mapa-digital-theme", selectedTheme);
+}
+
+applyTheme(initialTheme);
+themeChoices.forEach((choice) => {
+  choice.addEventListener("click", () => applyTheme(choice.dataset.themeChoice));
+});
+
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");

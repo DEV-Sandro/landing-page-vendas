@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-labelledby="title description">
+  <title id="title">Mapa Digital</title>
+  <desc id="description">Pin de localização verde cítrico e logotipo Mapa Digital</desc>
+  <rect width="360" height="80" rx="4" fill="#0a0a0a"/>
+  <g transform="translate(15 10)">
+    <path d="M26 1C12.2 1 1 12 1 25.7 1 44.1 26 59 26 59s25-14.9 25-33.3C51 12 39.8 1 26 1Z" fill="#ccff00"/>
+    <circle cx="26" cy="25" r="9" fill="#0a0a0a"/>
+  </g>
+  <text x="82" y="48" fill="#ededed" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="-1">MAPA</text>
+  <text x="185" y="48" fill="#a1a1a1" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" letter-spacing="5">DIGITAL</text>
+</svg>

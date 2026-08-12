@@ -105,19 +105,19 @@
       .consent-banner__text { margin: 0; color: #a1a1a1; font-size: .9rem; line-height: 1.6; }
       .consent-banner__text a {
         display: inline; min-height: 0; padding: 0; border-radius: 0; background: transparent;
-        color: var(--accent-color, #ccff00); font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
+        color: var(--accent, #1fd886); font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
       }
       .consent-banner__text a:hover { background: transparent; filter: brightness(1.12); }
       .consent-banner__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
       .consent-banner__button {
-        min-height: 44px; padding: 10px 16px; border: 1px solid var(--accent-color, #ccff00);
-        border-radius: 3px; background: var(--accent-color, #ccff00); color: #070707; cursor: pointer;
+        min-height: 44px; padding: 10px 16px; border: 1px solid var(--accent, #1fd886);
+        border-radius: 3px; background: var(--accent, #1fd886); color: var(--button-text, #07120c); cursor: pointer;
         font: 700 .86rem/1 Inter, system-ui, sans-serif;
       }
       .consent-banner__button:hover { filter: brightness(1.08); }
       .consent-banner__button--secondary { border-color: rgba(255, 255, 255, .22); background: transparent; color: #ededed; }
       .consent-banner__button--secondary:hover { background: #202020; }
-      .consent-banner__button:focus-visible { outline: 3px solid var(--accent-color, #ccff00); outline-offset: 3px; }
+      .consent-banner__button:focus-visible { outline: 3px solid var(--accent, #1fd886); outline-offset: 3px; }
       @media (max-width: 560px) {
         .consent-banner { right: 12px; bottom: 12px; width: calc(100% - 24px); padding: 18px; }
         .consent-banner__actions { display: grid; }
@@ -162,8 +162,8 @@
   function eventLocation(element) {
     if (element.closest("header")) return "header";
     if (element.closest("footer")) return "footer";
-    if (element.closest(".pricing")) return "pricing";
-    if (element.closest(".portfolio")) return "portfolio";
+    if (element.closest(".showcase-section")) return "showcase";
+    if (element.closest(".final-cta")) return "final_cta";
     if (element.classList.contains("whatsapp-float")) return "floating_button";
     return "content";
   }
@@ -205,7 +205,7 @@
     if (!link) return;
 
     const targetUrl = new URL(link.href, window.location.href);
-    if (link.closest(".project-card") && targetUrl.origin !== window.location.origin) {
+    if (link.matches("[data-case-link]") && targetUrl.origin !== window.location.origin) {
       window.gtag("event", "portfolio_click", {
         project_domain: targetUrl.hostname
       });

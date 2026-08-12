@@ -4,8 +4,8 @@
   "description": "Presença digital para negócios que querem ser encontrados.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#ccff00",
+  "background_color": "#f3f2ec",
+  "theme_color": "#1fd886",
   "icons": [
     {
       "src": "assets/images/mapa-digital-pin.svg",

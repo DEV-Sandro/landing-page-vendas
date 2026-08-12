@@ -1,41 +1,5 @@
 document.documentElement.classList.add("js");
 
-const themeChoices = [...document.querySelectorAll("[data-theme-choice]")];
-const storedTheme = localStorage.getItem("mapa-digital-theme");
-const validThemes = ["neon", "blue", "fire", "violet"];
-const themeNames = {
-  neon: "NEON",
-  blue: "TRUST BLUE",
-  fire: "SALE FIRE",
-  violet: "CREATIVE VIOLET"
-};
-const themeColors = {
-  neon: "#ccff00",
-  blue: "#00e5ff",
-  fire: "#ff5500",
-  violet: "#b000ff"
-};
-const initialTheme = validThemes.includes(storedTheme) ? storedTheme : "neon";
-
-function applyTheme(theme) {
-  const selectedTheme = validThemes.includes(theme) ? theme : "neon";
-  document.documentElement.dataset.theme = selectedTheme;
-  document.documentElement.style.setProperty("--accent-color", themeColors[selectedTheme]);
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", themeColors[selectedTheme]);
-  themeChoices.forEach((choice) => {
-    choice.setAttribute("aria-pressed", String(choice.dataset.themeChoice === selectedTheme));
-  });
-  document.querySelectorAll("[data-theme-name]").forEach((element) => {
-    element.textContent = themeNames[selectedTheme];
-  });
-  localStorage.setItem("mapa-digital-theme", selectedTheme);
-}
-
-applyTheme(initialTheme);
-themeChoices.forEach((choice) => {
-  choice.addEventListener("click", () => applyTheme(choice.dataset.themeChoice));
-});
-
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");
@@ -44,18 +8,15 @@ const menuLinks = menu ? [...menu.querySelectorAll("a")] : [];
 
 function closeMenu({ returnFocus = false } = {}) {
   if (!menu || !menuToggle) return;
-
   menu.classList.remove("is-open");
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-label", "Abrir menu");
   document.body.classList.remove("menu-open");
-
   if (returnFocus) menuToggle.focus();
 }
 
 function openMenu() {
   if (!menu || !menuToggle) return;
-
   menu.classList.add("is-open");
   menuToggle.setAttribute("aria-expanded", "true");
   menuToggle.setAttribute("aria-label", "Fechar menu");
@@ -63,52 +24,30 @@ function openMenu() {
   menuLinks[0]?.focus();
 }
 
-menuToggle?.addEventListener("click", () => {
-  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-  if (isOpen) closeMenu();
-  else openMenu();
-});
-
+menuToggle?.addEventListener("click", () => menuToggle.getAttribute("aria-expanded") === "true" ? closeMenu() : openMenu());
 menuLinks.forEach((link) => link.addEventListener("click", () => closeMenu()));
+document.addEventListener("keydown", (event) => { if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") closeMenu({ returnFocus: true }); });
+window.addEventListener("resize", () => { if (window.innerWidth > 920) closeMenu(); });
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") {
-    closeMenu({ returnFocus: true });
-  }
-});
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 920) closeMenu();
-});
-
-function updateHeader() {
+function updateChrome() {
   header?.classList.toggle("scrolled", window.scrollY > 10);
-  whatsappFloat?.classList.toggle("is-visible", window.scrollY > 420);
+  whatsappFloat?.classList.toggle("is-visible", window.scrollY > 520);
 }
+updateChrome();
+window.addEventListener("scroll", updateChrome, { passive: true });
 
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
+document.querySelectorAll("[data-year]").forEach((element) => { element.textContent = String(new Date().getFullYear()); });
 
-document.querySelectorAll("[data-year]").forEach((element) => {
-  element.textContent = String(new Date().getFullYear());
-});
-
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll(".reveal");
-
-if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-} else {
-  const observer = new IntersectionObserver(
-    (entries, currentObserver) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        currentObserver.unobserve(entry.target);
-      });
-    },
-    { rootMargin: "0px 0px -7%", threshold: 0.1 }
-  );
-
+if (reducedMotion || !("IntersectionObserver" in window)) revealItems.forEach((item) => item.classList.add("is-visible"));
+else {
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      currentObserver.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -8%", threshold: .08 });
   revealItems.forEach((item) => observer.observe(item));
 }

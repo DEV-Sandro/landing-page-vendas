@@ -1,5 +1,8 @@
 const story = document.querySelector("[data-scroll-story]");
+const storyHeading = document.querySelector("[data-story-heading]");
+const storyPrefix = document.querySelector("[data-story-prefix]");
 const storyWord = document.querySelector("[data-story-word]");
+const storySuffix = document.querySelector("[data-story-suffix]");
 const storyLead = document.querySelector("[data-story-lead]");
 const storyStatus = document.querySelector("[data-story-status]");
 const storyProgress = document.querySelector("[data-story-progress]");
@@ -8,10 +11,10 @@ const depthCards = [...document.querySelectorAll("[data-depth]")];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const narrative = [
-  { word: "INVISÍVEL", lead: "Enquanto sua empresa não aparece, a concorrência ocupa a busca, conquista a confiança e fecha a venda.", status: "BUSCANDO SINAL..." },
-  { word: "ENCONTRADO", lead: "Sua empresa surge no momento em que o cliente demonstra intenção e procura exatamente o que você oferece.", status: "SINAL LOCALIZADO" },
-  { word: "LEMBRADO", lead: "Uma identidade consistente transforma uma visita rápida em reconhecimento, autoridade e preferência.", status: "MARCA REGISTRADA" },
-  { word: "ESCOLHIDO", lead: "A experiência reduz a dúvida, facilita o contato e coloca sua empresa mais perto da próxima venda.", status: "ROTA CONCLUÍDA" }
+  { prefix: "Chega de ser", word: "INVISÍVEL", suffix: " na internet.", lead: "Enquanto sua empresa não aparece, a concorrência ocupa a busca, conquista a confiança e fecha a venda.", status: "BUSCANDO SINAL..." },
+  { prefix: "Sua empresa precisa ser", word: "ENCONTRADA", suffix: ".", lead: "Ela deve aparecer no momento em que o cliente procura exatamente o serviço que você oferece.", status: "SINAL LOCALIZADO" },
+  { prefix: "Sua marca precisa ser", word: "LEMBRADA", suffix: ".", lead: "Uma identidade consistente transforma uma visita rápida em reconhecimento, autoridade e preferência.", status: "MARCA RECONHECIDA" },
+  { prefix: "Seu negócio merece ser", word: "ESCOLHIDO", suffix: ".", lead: "Uma experiência clara reduz a dúvida, facilita o contato e aproxima sua empresa da próxima venda.", status: "ROTA CONCLUÍDA" }
 ];
 
 let currentStep = -1;
@@ -30,13 +33,14 @@ function updateNarrative() {
   if (step !== currentStep) {
     currentStep = step;
     const content = narrative[step];
+    if (storyPrefix) storyPrefix.textContent = content.prefix;
+    if (storySuffix) storySuffix.textContent = content.suffix;
     if (storyWord) {
       storyWord.classList.toggle("is-invisible", step === 0);
-      if (reducedMotion) storyWord.textContent = content.word;
-      else {
-        storyWord.animate([{ opacity: .2, filter: "blur(8px)", transform: "translateY(10px)" }, { opacity: 1, filter: "blur(0)", transform: "translateY(0)" }], { duration: 620, easing: "cubic-bezier(.16,1,.3,1)" });
-        storyWord.textContent = content.word;
-      }
+      storyWord.textContent = content.word;
+    }
+    if (!reducedMotion && storyHeading) {
+      storyHeading.animate([{ opacity: .25, filter: "blur(6px)", transform: "translateY(10px)" }, { opacity: 1, filter: "blur(0)", transform: "translateY(0)" }], { duration: 620, easing: "cubic-bezier(.16,1,.3,1)" });
     }
     if (storyLead) storyLead.textContent = content.lead;
     if (storyStatus) storyStatus.textContent = content.status;

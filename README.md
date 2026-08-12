@@ -10,7 +10,7 @@ Landing page comercial da Mapa Digital para apresentar serviços de presença di
 
 - `index.html`: conteúdo, metadados e dados estruturados.
 - `style.css`: identidade visual e responsividade.
-- `script.js`: menu acessível, animações discretas e ano automático.
+- `script.js`: menu acessível, animações discretas e seletor persistente entre Neon, Trust Blue, Sale Fire e Creative Violet.
 - `analytics.js`: Google Analytics 4 com consentimento e eventos de conversão sem dados pessoais.
 - `privacy.html`: política de privacidade e controle das preferências de métricas.
 - `assets/images`: screenshots otimizados, favicon e imagem social.

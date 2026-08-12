@@ -105,19 +105,19 @@
       .consent-banner__text { margin: 0; color: #a1a1a1; font-size: .9rem; line-height: 1.6; }
       .consent-banner__text a {
         display: inline; min-height: 0; padding: 0; border-radius: 0; background: transparent;
-        color: #ccff00; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
+        color: var(--accent-color, #ccff00); font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
       }
-      .consent-banner__text a:hover { background: transparent; color: #dbff4d; }
+      .consent-banner__text a:hover { background: transparent; filter: brightness(1.12); }
       .consent-banner__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
       .consent-banner__button {
-        min-height: 44px; padding: 10px 16px; border: 1px solid #ccff00;
-        border-radius: 3px; background: #ccff00; color: #070707; cursor: pointer;
+        min-height: 44px; padding: 10px 16px; border: 1px solid var(--accent-color, #ccff00);
+        border-radius: 3px; background: var(--accent-color, #ccff00); color: #070707; cursor: pointer;
         font: 700 .86rem/1 Inter, system-ui, sans-serif;
       }
-      .consent-banner__button:hover { background: #dbff4d; }
+      .consent-banner__button:hover { filter: brightness(1.08); }
       .consent-banner__button--secondary { border-color: rgba(255, 255, 255, .22); background: transparent; color: #ededed; }
       .consent-banner__button--secondary:hover { background: #202020; }
-      .consent-banner__button:focus-visible { outline: 3px solid #ccff00; outline-offset: 3px; }
+      .consent-banner__button:focus-visible { outline: 3px solid var(--accent-color, #ccff00); outline-offset: 3px; }
       @media (max-width: 560px) {
         .consent-banner { right: 12px; bottom: 12px; width: calc(100% - 24px); padding: 18px; }
         .consent-banner__actions { display: grid; }

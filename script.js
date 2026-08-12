@@ -2,17 +2,31 @@ document.documentElement.classList.add("js");
 
 const themeChoices = [...document.querySelectorAll("[data-theme-choice]")];
 const storedTheme = localStorage.getItem("mapa-digital-theme");
-const initialTheme = storedTheme === "amber" ? "amber" : "acid";
+const validThemes = ["neon", "blue", "fire", "violet"];
+const themeNames = {
+  neon: "NEON",
+  blue: "TRUST BLUE",
+  fire: "SALE FIRE",
+  violet: "CREATIVE VIOLET"
+};
+const themeColors = {
+  neon: "#ccff00",
+  blue: "#00e5ff",
+  fire: "#ff5500",
+  violet: "#b000ff"
+};
+const initialTheme = validThemes.includes(storedTheme) ? storedTheme : "neon";
 
 function applyTheme(theme) {
-  const selectedTheme = theme === "amber" ? "amber" : "acid";
+  const selectedTheme = validThemes.includes(theme) ? theme : "neon";
   document.documentElement.dataset.theme = selectedTheme;
-  document.querySelector('meta[name="theme-color"]')?.setAttribute(
-    "content",
-    selectedTheme === "amber" ? "#ffb800" : "#0a0a0a"
-  );
+  document.documentElement.style.setProperty("--accent-color", themeColors[selectedTheme]);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", themeColors[selectedTheme]);
   themeChoices.forEach((choice) => {
     choice.setAttribute("aria-pressed", String(choice.dataset.themeChoice === selectedTheme));
+  });
+  document.querySelectorAll("[data-theme-name]").forEach((element) => {
+    element.textContent = themeNames[selectedTheme];
   });
   localStorage.setItem("mapa-digital-theme", selectedTheme);
 }

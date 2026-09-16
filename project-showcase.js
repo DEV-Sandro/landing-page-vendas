@@ -50,6 +50,7 @@ function renderProject(index, animate = true) {
   const update = () => {
     showcase?.style.setProperty("--project-color", project.color);
     showcase?.style.setProperty("--project-ink", project.ink);
+    showcase?.style.setProperty("--project-progress", `${((activeIndex + 1) / projects.length) * 100}%`);
     if (title) title.textContent = project.title;
     if (category) category.textContent = project.category;
     if (summary) summary.textContent = project.summary;

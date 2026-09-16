@@ -4,7 +4,7 @@ const choices = [...document.querySelectorAll("[data-dna-choice]")];
 const validExperiences = ["digital", "premium", "corporate"];
 
 const experienceMeta = {
-  digital: { themeColor: "#f3f2ec", wipe: "#1fd886", ink: "#07120c", label: "DIGITAL DNA" },
+  digital: { themeColor: "#f3f2ec", wipe: "#087d56", ink: "#ffffff", label: "DIGITAL DNA" },
   premium: { themeColor: "#09090b", wipe: "#c9ff2e", ink: "#080a03", label: "PREMIUM DNA" },
   corporate: { themeColor: "#edf1f5", wipe: "#1559a8", ink: "#ffffff", label: "CORPORATE DNA" }
 };

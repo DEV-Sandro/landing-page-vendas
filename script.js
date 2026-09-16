@@ -36,6 +36,18 @@ function updateChrome() {
 updateChrome();
 window.addEventListener("scroll", updateChrome, { passive: true });
 
+if (whatsappFloat && "IntersectionObserver" in window) {
+  const overlappingSections = new Set();
+  const floatObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) overlappingSections.add(entry.target);
+      else overlappingSections.delete(entry.target);
+    });
+    whatsappFloat.classList.toggle("is-suppressed", overlappingSections.size > 0);
+  }, { rootMargin: "-80px 0px -80px 0px", threshold: .1 });
+  document.querySelectorAll("#projetos, .final-cta").forEach((section) => floatObserver.observe(section));
+}
+
 document.querySelectorAll("[data-year]").forEach((element) => { element.textContent = String(new Date().getFullYear()); });
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

@@ -21,6 +21,7 @@ const summary = document.querySelector("[data-project-summary]");
 const domain = document.querySelector("[data-project-domain]");
 const desktopImage = document.querySelector("[data-project-desktop]");
 const mobileImage = document.querySelector("[data-project-mobile]");
+const liveLink = document.querySelector("[data-project-live]");
 const current = document.querySelector("[data-project-current]");
 const total = document.querySelector("[data-project-total]");
 const dialog = document.querySelector("[data-case-dialog]");
@@ -53,6 +54,7 @@ function renderProject(index, animate = true) {
     if (category) category.textContent = project.category;
     if (summary) summary.textContent = project.summary;
     if (domain) domain.textContent = project.domain;
+    if (liveLink) liveLink.href = project.url;
     if (desktopImage) { desktopImage.src = project.image; desktopImage.alt = `Projeto ${project.title} em desktop`; }
     if (mobileImage) {
       mobileImage.src = project.mobileImage || project.image;
@@ -66,8 +68,12 @@ function renderProject(index, animate = true) {
   if (!animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) { update(); return; }
   projectChanging = true;
   media?.classList.add("is-changing");
-  window.setTimeout(update, 260);
-  window.setTimeout(() => { media?.classList.remove("is-changing"); projectChanging = false; }, 650);
+  window.setTimeout(() => {
+    update();
+    media?.classList.remove("is-changing");
+    media?.classList.add("is-entering");
+  }, 310);
+  window.setTimeout(() => { media?.classList.remove("is-entering"); projectChanging = false; }, 850);
 }
 
 document.querySelector("[data-project-next]")?.addEventListener("click", () => renderProject(activeIndex + 1));

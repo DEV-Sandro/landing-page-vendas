@@ -4,14 +4,14 @@ Landing page comercial da Mapa Digital para apresentar serviços de presença di
 
 ## Acesso
 
-[https://dev-sandro.github.io/landing-page-vendas/](https://dev-sandro.github.io/landing-page-vendas/)
+[https://landing-sites.netlify.app/](https://landing-sites.netlify.app/)
 
 ## Estrutura
 
 - `index.html`: conteúdo, metadados e dados estruturados.
 - `style.css`: identidade visual e responsividade.
 - `site-dna.js`: motor persistente das experiências Digital, Premium e Corporate com transição Color Wipe.
-- `scroll-story.js`: narrativa progressiva do Hero e profundidade dos serviços durante o scroll.
+- `scroll-story.js`: narrativa progressiva do Hero, traçado do mapa e profundidade dos serviços durante o scroll.
 - `project-showcase.js`: slider imersivo, mockups responsivos e expansão dos case studies.
 - `script.js`: navegação acessível, elementos revelados durante o scroll e comportamentos globais.
 - `analytics.js`: Google Analytics 4 com consentimento e eventos de conversão sem dados pessoais.
@@ -19,6 +19,6 @@ Landing page comercial da Mapa Digital para apresentar serviços de presença di
 - `assets/images`: screenshots otimizados, favicon e imagem social.
 - `404.html`, `robots.txt` e `sitemap.xml`: suporte à publicação e indexação.
 
-O projeto usa HTML, CSS e JavaScript puro e está preparado para hospedagem em subdiretório no GitHub Pages.
+O projeto usa HTML, CSS e JavaScript puro, sem bibliotecas de animação. As interações aproveitam recursos nativos do navegador e respeitam a preferência por movimento reduzido.
 
 O fluxo do Google Analytics usa o ID `G-YHQCRPCNF6` e só é carregado após a autorização do visitante.

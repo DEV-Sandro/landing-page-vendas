@@ -1,5 +1,4 @@
 const story = document.querySelector("[data-scroll-story]");
-const storyHeading = document.querySelector("[data-story-heading]");
 const storyPrefix = document.querySelector("[data-story-prefix]");
 const storyWord = document.querySelector("[data-story-word]");
 const storySuffix = document.querySelector("[data-story-suffix]");
@@ -44,12 +43,10 @@ function updateNarrative() {
       storyWord.classList.toggle("is-invisible", step === 0);
       storyWord.textContent = content.word;
     }
-    if (!reducedMotion && storyHeading) {
-      storyHeading.animate([{ opacity: .25, filter: "blur(6px)", transform: "translateY(10px)" }, { opacity: 1, filter: "blur(0)", transform: "translateY(0)" }], { duration: 620, easing: "cubic-bezier(.16,1,.3,1)" });
-    }
     if (storyLead) storyLead.textContent = content.lead;
     if (storyStatus) storyStatus.textContent = content.status;
     if (routeCounter) routeCounter.textContent = `${String(step + 1).padStart(2, "0")} — 04`;
+    window.dispatchEvent(new CustomEvent("mapa:story-change", { detail: { step } }));
   }
 }
 

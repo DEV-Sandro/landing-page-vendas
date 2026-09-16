@@ -63,6 +63,7 @@ function renderProject(index, animate = true) {
     }
     if (current) current.textContent = String(activeIndex + 1).padStart(2, "0");
     fillCase(project);
+    window.dispatchEvent(new CustomEvent("mapa:project-change", { detail: { index: activeIndex } }));
   };
 
   if (!animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) { update(); return; }
@@ -82,7 +83,7 @@ document.querySelector("[data-project-prev]")?.addEventListener("click", () => r
 function openCase() {
   if (!dialog) return;
   fillCase(projects[activeIndex]);
-  const show = () => { dialog.showModal(); document.body.classList.add("case-open"); };
+  const show = () => { dialog.showModal(); document.body.classList.add("case-open"); window.dispatchEvent(new Event("mapa:case-open")); };
   if (document.startViewTransition) document.startViewTransition(show);
   else show();
 }
